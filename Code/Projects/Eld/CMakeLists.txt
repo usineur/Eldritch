@@ -1,0 +1,174 @@
+cmake_minimum_required(VERSION 2.6)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+include_directories(../../Libraries/Audio/src)
+include_directories(../../Libraries/Math/src)
+include_directories(../../Libraries/Framework/src)
+include_directories(../../Libraries/UI/src)
+include_directories(../../Libraries/3D/src)
+include_directories(../../Libraries/Core/src)
+include_directories(../../Libraries/Rodin/src)
+include_directories(../../Libraries/Workbench/src)
+include_directories(src)
+
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Audio/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Audio/lib)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Math/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Framework/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/UI/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/3D/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Core/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Rodin/)
+link_directories(${CMAKE_SOURCE_DIR}/Libraries/Workbench/)
+
+set(eldritch_src
+  src/Achievements/achievementmanager_steam.cpp
+  src/Actions/wbactioneldaddblock.cpp
+  src/Actions/wbactioneldbanktransaction.cpp
+  src/Actions/wbactioneldbindinput.cpp
+  src/Actions/wbactioneldcheckcone.cpp
+  src/Actions/wbactioneldcheckline.cpp
+  src/Actions/wbactioneldchecksphere.cpp
+  src/Actions/wbactionelddamageworld.cpp
+  src/Actions/wbactioneldgiveitem.cpp
+  src/Actions/wbactioneldgotolevel.cpp
+  src/Actions/wbactioneldlaunchuserid.cpp
+  src/Actions/wbactioneldlaunchwebsite.cpp
+  src/Actions/wbactioneldopenuserdatapath.cpp
+  src/Actions/wbactioneldplayanim.cpp
+  src/Actions/wbactioneldplayhandanim.cpp
+  src/Actions/wbactioneldpostscore.cpp
+  src/Actions/wbactioneldremoveblock.cpp
+  src/Actions/wbactioneldsetlight.cpp
+  src/Actions/wbactioneldsetpersistentvar.cpp
+  src/Actions/wbactioneldshowbook.cpp
+  src/Actions/wbactioneldspawnentity.cpp
+  src/Actions/wbactioneldstopmotion.cpp
+  src/Actions/wbactioneldtweetrip.cpp
+  src/Actions/wbactionneonawardachievement.cpp
+  src/Actions/wbactionneonincrementstat.cpp
+  src/Actions/wbactionneonsetstat.cpp
+  src/AnimEvents/animeventeldexecuteaction.cpp
+  src/AnimEvents/animeventeldsendevent.cpp
+  src/BTNodes/rodinbtnodeeldlookat.cpp
+  src/BTNodes/rodinbtnodeeldmoveto.cpp
+  src/BTNodes/rodinbtnodeeldplayanim.cpp
+  src/BTNodes/rodinbtnodeeldplaybark.cpp
+  src/BTNodes/rodinbtnodeeldstopmoving.cpp
+  src/BTNodes/rodinbtnodeeldturntoward.cpp
+  src/Components/wbcompeldaimotion.cpp
+  src/Components/wbcompeldammobag.cpp
+  src/Components/wbcompeldanchor.cpp
+  src/Components/wbcompeldazathoth.cpp
+  src/Components/wbcompeldcamera.cpp
+  src/Components/wbcompeldcharacter.cpp
+  src/Components/wbcompeldclimbable.cpp
+  src/Components/wbcompeldcollision.cpp
+  src/Components/wbcompelddamager.cpp
+  src/Components/wbcompelddoor.cpp
+  src/Components/wbcompelddropshadow.cpp
+  src/Components/wbcompeldendgamecounter.cpp
+  src/Components/wbcompeldfaction.cpp
+  src/Components/wbcompeldfootsteps.cpp
+  src/Components/wbcompeldfrobbable.cpp
+  src/Components/wbcompeldfrobber.cpp
+  src/Components/wbcompeldhands.cpp
+  src/Components/wbcompeldhard.cpp
+  src/Components/wbcompeldhardlistener.cpp
+  src/Components/wbcompeldheadtracker.cpp
+  src/Components/wbcompeldhealth.cpp
+  src/Components/wbcompeldhudmarker.cpp
+  src/Components/wbcompeldicicles.cpp
+  src/Components/wbcompeldinventory.cpp
+  src/Components/wbcompelditem.cpp
+  src/Components/wbcompeldkeyring.cpp
+  src/Components/wbcompeldlight.cpp
+  src/Components/wbcompeldlock.cpp
+  src/Components/wbcompeldmapmarker.cpp
+  src/Components/wbcompeldmarkup.cpp
+  src/Components/wbcompeldmesh.cpp
+  src/Components/wbcompeldminimap.cpp
+  src/Components/wbcompeldparticles.cpp
+  src/Components/wbcompeldpickup.cpp
+  src/Components/wbcompeldplayer.cpp
+  src/Components/wbcompeldpowerteleport.cpp
+  src/Components/wbcompeldrespawner.cpp
+  src/Components/wbcompeldrope.cpp
+  src/Components/wbcompeldsensor.cpp
+  src/Components/wbcompeldsensordamage.cpp
+  src/Components/wbcompeldsensorhearing.cpp
+  src/Components/wbcompeldsensormarkup.cpp
+  src/Components/wbcompeldsensorpoll.cpp
+  src/Components/wbcompeldsensortheft.cpp
+  src/Components/wbcompeldsensorvision.cpp
+  src/Components/wbcompeldsleeper.cpp
+  src/Components/wbcompeldsouls.cpp
+  src/Components/wbcompeldsound.cpp
+  src/Components/wbcompeldspikes.cpp
+  src/Components/wbcompeldthinker.cpp
+  src/Components/wbcompeldthinkerhearwormtarget.cpp
+  src/Components/wbcompeldthinkerpatrol.cpp
+  src/Components/wbcompeldthinkertarget.cpp
+  src/Components/wbcompeldtransform.cpp
+  src/Components/wbcompeldtrapbolt.cpp
+  src/Components/wbcompeldusable.cpp
+  src/Components/wbcompeldvisible.cpp
+  src/Components/wbcompeldwallet.cpp
+  src/Components/wbcompeldwatson.cpp
+  src/Components/wbcompeldweapon.cpp
+  src/Components/wbcomprodinbehaviortree_debugrender.cpp
+  src/Components/wbeldcomponent.cpp
+  src/eldbank.cpp
+  src/eldfactions.cpp
+  src/eldframework.cpp
+  src/eldgame.cpp
+  src/eldirradiance.cpp
+  src/eldmesh.cpp
+  src/eldmusic.cpp
+  src/eldnav.cpp
+  src/eldparticles.cpp
+  src/eldpersistence.cpp
+  src/eldroom.cpp
+  src/eldsaveload.cpp
+  src/eldsound3dlistener.cpp
+  src/eldsurfaces.cpp
+  src/eldtargetmanager.cpp
+  src/eldtools.cpp
+  src/eldwardrobe.cpp
+  src/eldwbscenehelpers.cpp
+  src/eldworld.cpp
+  src/eldworldgen.cpp
+  src/exceptionwritesteamminidump.cpp
+  src/Leaderboards/leaderboards_steam.cpp
+  src/main.cpp
+  src/PEs/wbpeelddistance.cpp
+  src/PEs/wbpeeldgetcharactervo.cpp
+  src/PEs/wbpeeldgetfaction.cpp
+  src/PEs/wbpeeldgetitem.cpp
+  src/PEs/wbpeeldgetlocation.cpp
+  src/PEs/wbpeeldgetpersistentvar.cpp
+  src/PEs/wbpeeldgetplaytime.cpp
+  src/PEs/wbpeeldgetslot.cpp
+  src/PEs/wbpeeldgetvelocity.cpp
+  src/PEs/wbpeeldhardscalar.cpp
+  src/PEs/wbpeeldhardswitch.cpp
+  src/PEs/wbpeeldplayer.cpp
+  src/Screens/uiscreen-eldbindinputs.cpp
+  src/Screens/uiscreen-eldcredits.cpp
+  src/Screens/uiscreen-eldleaderboards.cpp
+  src/Screens/uiscreen-eldmirror.cpp
+  src/Screens/uiscreen-eldsetres.cpp
+  src/SDPs/sdpelddropshadow.cpp
+  src/SDPs/sdpeldfxaa.cpp
+  src/SDPs/sdpeldhudcalibration.cpp
+  src/SDPs/sdpeldhud.cpp
+  src/SDPs/sdpeldlit.cpp
+  src/SDPs/sdpeldpost.cpp
+  src/SDPs/sdpeldworld.cpp
+  src/uiinputmapeld.cpp
+)
+
+add_executable(Eldritch ${eldritch_src})
+
+target_link_libraries(Eldritch Core Math 3D Audio SoLoud Workbench Rodin UI Framework SDL2 GL GLEW pthread)
