@@ -2,6 +2,9 @@
 #include "gl2pixelshader.h"
 #include "idatastream.h"
 #include "memorystream.h"
+#ifdef HAVE_GLES
+#include "util.h"
+#endif
 
 GL2PixelShader::GL2PixelShader()
 :	m_PixelShader( 0 )
@@ -20,12 +23,20 @@ void GL2PixelShader::Initialize( const IDataStream& Stream )
 {
 	XTRACE_FUNCTION;
 
-	const int Length	= Stream.Size();
-	byte* pBuffer		= new byte[ Length ];
+	int Length		= Stream.Size();
+	byte* pBuffer	= new byte[ Length + 1 ];
 	Stream.Read( Length, pBuffer );
+	pBuffer[Length] = '\0';
 
 	m_PixelShader = glCreateShader( GL_FRAGMENT_SHADER );
 	ASSERT( m_PixelShader != 0 );
+
+#ifdef HAVE_GLES
+	byte *Tmp = ConvertShader(pBuffer);
+	SafeDeleteArray(pBuffer);
+	pBuffer = Tmp;
+	Length = strlen((const char*)pBuffer);
+#endif
 
 	// Copy the GLSL source
 	const GLsizei	NumStrings		= 1;

@@ -4,6 +4,16 @@
 #include "vector2.h"
 #include "vector4.h"
 
+#ifdef HAVE_GLES
+extern "C" {
+	void* SDL_GL_GetProcAddress(const char* proc);
+}
+#define eglGetProcAddress(aa) SDL_GL_GetProcAddress(aa)
+static int MapBufferInited = 0;
+static PFNGLMAPBUFFEROESPROC glMapBuffer = NULL;
+#define GL_WRITE_ONLY GL_WRITE_ONLY_OES
+#endif
+
 GL2VertexBuffer::GL2VertexBuffer()
 :	m_RefCount( 0 )
 ,	m_NumVertices( 0 )
@@ -18,6 +28,12 @@ GL2VertexBuffer::GL2VertexBuffer()
 ,	m_BoneIndicesVBO( 0 )
 ,	m_BoneWeightsVBO( 0 )
 {
+#ifdef HAVE_GLES
+	if (!MapBufferInited) {
+		glMapBuffer = (PFNGLMAPBUFFEROESPROC)eglGetProcAddress("glMapBufferOES");
+		MapBufferInited = 1;
+	}
+#endif
 }
 
 GL2VertexBuffer::~GL2VertexBuffer()

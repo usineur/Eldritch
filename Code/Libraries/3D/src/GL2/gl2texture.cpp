@@ -3,6 +3,9 @@
 #include "idatastream.h"
 #include "configmanager.h"
 #include "mathcore.h"
+#ifdef HAVE_GLES
+#include "util.h"
+#endif
 
 GL2Texture::GL2Texture()
 :	m_Texture( 0 )
@@ -75,7 +78,12 @@ static GLenum GLImageFormat[] =
 		{
 			if( Format == GL_RGBA8 )
 			{
+#ifdef HAVE_GLES
+				byte* tmp = ConvertBGRA2RGBA( Width, Height, Mip.GetData() );
+				glTexImage2D( GL_TEXTURE_2D, MipLevel, Format, Width, Height, Border, GL_RGBA, GL_UNSIGNED_BYTE, tmp );
+#else
 				glTexImage2D( GL_TEXTURE_2D, MipLevel, Format, Width, Height, Border, GL_BGRA, GL_UNSIGNED_BYTE, Mip.GetData() );
+#endif
 			}
 			else if( Format == GL_RGBA32F)
 			{
@@ -146,7 +154,9 @@ struct SDDSurfaceFormat
 {
 	XTRACE_FUNCTION;
 
+#ifndef HAVE_GLES
 	ASSERT( GLEW_EXT_texture_compression_s3tc );
+#endif
 
 	const uint DDSTag = Stream.ReadUInt32();
 	DEVASSERT( DDSTag == DDS_TAG );

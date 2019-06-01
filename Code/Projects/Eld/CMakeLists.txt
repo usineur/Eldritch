@@ -171,4 +171,8 @@ set(eldritch_src
 
 add_executable(Eldritch ${eldritch_src})
 
-target_link_libraries(Eldritch Core Math 3D Audio SoLoud Workbench Rodin UI Framework SDL2 GL GLEW pthread)
+if(GLES)
+  target_link_libraries(Eldritch Core Math 3D Audio SoLoud Workbench Rodin UI Framework SDL2 GLESv2 pthread)
+else(GLES)
+  target_link_libraries(Eldritch Core Math 3D Audio SoLoud Workbench Rodin UI Framework SDL2 GL GLEW pthread)
+endif(GLES)

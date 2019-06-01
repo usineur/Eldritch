@@ -10,6 +10,8 @@ option(OSS "Set ON to enable OSS backend" OFF)
 option(PORTAUDIO "Set ON to enable PortAudio backend" OFF)
 option(SDL2_STATIC "Default backend" ON)
 
+option(GLES "Set to ON if using GLES2 instead of desktop OpenGL" ${GLES})
+
 option(DEBUG_ENABLED "Build a DEBUG version (if not, then it's a RELEASE version)" OFF)
 option(FINAL_ENABLED "Build a FINAL version" OFF)
 
@@ -42,6 +44,9 @@ endif(OSS)
 if(PORTAUDIO)
   add_definitions(-DWITH_PORTAUDIO)
 endif(PORTAUDIO)
+if(GLES)
+  add_definitions(-DHAVE_GLES)
+endif(GLES)
 
 add_subdirectory(Libraries/Core/)
 add_subdirectory(Libraries/Math/)

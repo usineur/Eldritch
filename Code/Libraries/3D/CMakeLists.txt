@@ -50,6 +50,16 @@ set(3d_src
   src/view.cpp
 )
 
+if(GLES)
+  set(3d_src ${3d_src}
+    src/GL2/util.cpp
+  )
+endif(GLES)
+
 add_library(3D ${3d_src})
 
-target_link_libraries(3D Core Math GL GLEW)
+if(GLES)
+  target_link_libraries(3D Core Math)
+else(GLES)
+  target_link_libraries(3D Core Math GL GLEW)
+endif(GLES)

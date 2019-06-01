@@ -3,6 +3,9 @@
 #include "idatastream.h"
 #include "configmanager.h"
 #include "mathcore.h"
+#ifdef HAVE_GLES
+#include "util.h"
+#endif
 
 GL2Cubemap::GL2Cubemap()
 :	m_CubeTexture( 0 )
@@ -93,7 +96,12 @@ static GLenum GLCubemapTarget[] =
 			{
 				if( Format == GL_RGBA8 )
 				{
+#ifdef HAVE_GLES
+					byte* tmp = ConvertBGRA2RGBA( Width, Height, Mip.GetData() );
+					glTexImage2D( Target, MipLevel, Format, Width, Height, Border, GL_RGBA, GL_UNSIGNED_BYTE, tmp );
+#else
 					glTexImage2D( Target, MipLevel, Format, Width, Height, Border, GL_BGRA, GL_UNSIGNED_BYTE, Mip.GetData() );
+#endif
 				}
 				else if( Format == GL_RGBA32F)
 				{

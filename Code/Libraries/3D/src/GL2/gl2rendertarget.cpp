@@ -12,6 +12,7 @@
 		return GL_RGBA8;	// Meh?
 	case ERTF_A8R8G8B8:
 		return GL_RGBA8;
+#ifndef HAVE_GLES
 	case ERTF_A16B16G16R16:
 		return GL_RGBA16;
 	case ERTF_A16B16G16R16F:
@@ -26,6 +27,10 @@
 	case ERTF_R32G32F:
 		ASSERT( GLEW_ARB_texture_rg );
 		return GL_RG32F;
+#else
+	case ERTF_A16B16G16R16F:
+		return GL_RGBA16F;
+#endif
 	case ERTF_D24S8:
 		return GL_DEPTH24_STENCIL8;
 	default:
@@ -65,6 +70,10 @@ GL2RenderTarget::~GL2RenderTarget()
 
 	if( m_DepthStencilRenderBufferObject != 0 )
 	{
+#ifdef HAVE_GLES
+		glDeleteRenderbuffers( 1, &m_DepthStencilRenderBufferObject );
+		GLERRORCHECK;
+#else
 		if( GLEW_ARB_framebuffer_object )
 		{
 			glDeleteRenderbuffers( 1, &m_DepthStencilRenderBufferObject );
@@ -75,10 +84,15 @@ GL2RenderTarget::~GL2RenderTarget()
 			glDeleteRenderbuffersEXT( 1, &m_DepthStencilRenderBufferObject );
 			GLERRORCHECK;
 		}
+#endif
 	}
 
 	if( m_FrameBufferObject != 0 )
 	{
+#ifdef HAVE_GLES
+		glDeleteFramebuffers( 1, &m_FrameBufferObject );
+		GLERRORCHECK;
+#else
 		if( GLEW_ARB_framebuffer_object )
 		{
 			glDeleteFramebuffers( 1, &m_FrameBufferObject );
@@ -89,6 +103,7 @@ GL2RenderTarget::~GL2RenderTarget()
 			glDeleteFramebuffersEXT( 1, &m_FrameBufferObject );
 			GLERRORCHECK;
 		}
+#endif
 	}
 }
 
@@ -118,7 +133,11 @@ GL2RenderTarget::~GL2RenderTarget()
 		const GLenum ColorFormat = GetGLFormat( Params.ColorFormat );
 		// The image format parameters don't necessarily match the color format,
 		// but it doesn't matter because we're not providing image data here.
+#ifdef HAVE_GLES
+		glTexImage2D( GL_TEXTURE_2D, 0, ColorFormat, Params.Width, Params.Height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL );
+#else
 		glTexImage2D( GL_TEXTURE_2D, 0, ColorFormat, Params.Width, Params.Height, 0, GL_BGRA, GL_UNSIGNED_BYTE, NULL );
+#endif
 		GLERRORCHECK;
 
 		m_ColorTextures.PushBack( new GL2Texture( ColorTextureObject ) );
@@ -126,6 +145,13 @@ GL2RenderTarget::~GL2RenderTarget()
 
 	if( Params.DepthStencilFormat != ERTF_None )
 	{
+#ifdef HAVE_GLES
+		glGenRenderbuffers( 1, &m_DepthStencilRenderBufferObject );
+		ASSERT( m_DepthStencilRenderBufferObject != 0 );
+		glBindRenderbuffer( GL_RENDERBUFFER, m_DepthStencilRenderBufferObject );
+		const GLenum DepthStencilFormat = GL2RenderTarget::GetGLFormat( Params.DepthStencilFormat );
+		glRenderbufferStorage( GL_RENDERBUFFER, DepthStencilFormat, m_Width, m_Height );
+#else
 		if( GLEW_ARB_framebuffer_object )
 		{
 			glGenRenderbuffers( 1, &m_DepthStencilRenderBufferObject );
@@ -142,6 +168,7 @@ GL2RenderTarget::~GL2RenderTarget()
 			const GLenum DepthStencilFormat = GetGLFormat( Params.DepthStencilFormat );
 			glRenderbufferStorageEXT( GL_RENDERBUFFER_EXT, DepthStencilFormat, Params.Width, Params.Height );
 		}
+#endif
 	}
 
 	CreateFBO();
@@ -214,6 +241,26 @@ void GL2RenderTarget::Reset()
 
 void GL2RenderTarget::CreateFBO()
 {
+#ifdef HAVE_GLES
+	glGenFramebuffers( 1, &m_FrameBufferObject );
+	ASSERT( m_FrameBufferObject != 0 );
+	glBindFramebuffer( GL_FRAMEBUFFER, m_FrameBufferObject );
+	GLERRORCHECK;
+
+	FOR_EACH_ARRAY( TextureObjectIter, m_ColorTextureObjects, GLuint )
+	{
+		const uint		TextureIndex		= TextureObjectIter.GetIndex();
+		const GLuint	ColorTextureObject	= TextureObjectIter.GetValue();
+		glFramebufferTexture2D( GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + TextureIndex, GL_TEXTURE_2D, ColorTextureObject, 0 );
+		glFramebufferRenderbuffer( GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_DepthStencilRenderBufferObject );
+		glFramebufferRenderbuffer( GL_FRAMEBUFFER, GL_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_DepthStencilRenderBufferObject);
+		GLERRORCHECK;
+	}
+
+	const GLenum FrameBufferStatus = glCheckFramebufferStatus( GL_FRAMEBUFFER );
+	ASSERT( FrameBufferStatus == GL_FRAMEBUFFER_COMPLETE );
+	Unused( FrameBufferStatus );
+#else
 	// FBOs were supported in GL 2.1 only by extension, but some newer drivers
 	// don't still support that extension. Use whichever is available.
 	ASSERT( GLEW_EXT_framebuffer_object || GLEW_ARB_framebuffer_object );
@@ -259,4 +306,5 @@ void GL2RenderTarget::CreateFBO()
 		ASSERT( FrameBufferStatus == GL_FRAMEBUFFER_COMPLETE_EXT );
 		Unused( FrameBufferStatus );
 	}
+#endif
 }

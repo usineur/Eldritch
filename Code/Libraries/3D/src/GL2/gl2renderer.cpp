@@ -115,6 +115,7 @@ void GL2Renderer::Initialize()
 #endif
 	}
 
+#ifndef HAVE_GLES
 	{
 		const GLenum Error		= glewInit();
 		Unused( Error );
@@ -133,6 +134,7 @@ void GL2Renderer::Initialize()
 		ASSERT( WGLEW_EXT_swap_control );
 #endif
 	}
+#endif
 
 	glFrontFace( GL_CCW );
 	GLint MaxVertexAttribs;
@@ -272,7 +274,11 @@ void GL2Renderer::Tick()
 	}
 
 	SETSTREAM( Positions,	VD_POSITIONS,	3,			GL_FLOAT,			GL_FALSE );
+#ifndef HAVE_GLES
 	SETSTREAM( Colors,		VD_COLORS,		GL_BGRA,	GL_UNSIGNED_BYTE,	GL_TRUE );	// GL_BGRA as glVertexAttribPointer size parameter is a hack for swizzling (GL_EXT_vertex_array_bgra/GL_ARB_vertex_array_bgra)
+#else
+	SETSTREAM( Colors,		VD_COLORS,		4,			GL_UNSIGNED_BYTE,	GL_TRUE );
+#endif
 	SETSTREAM( FloatColors,	VD_FLOATCOLORS,	4,			GL_FLOAT,			GL_FALSE );
 	SETSTREAM( UVs,			VD_UVS,			2,			GL_FLOAT,			GL_FALSE );
 	SETSTREAM( Normals,		VD_NORMALS,		3,			GL_FLOAT,			GL_FALSE );
@@ -468,6 +474,9 @@ void GL2Renderer::SetRenderTarget( IRenderTarget* const pRenderTarget )
 
 	const GLuint FrameBufferObject = *static_cast<GLuint*>( m_CurrentRenderTarget->GetHandle() );
 
+#ifdef HAVE_GLES
+	glBindFramebuffer(GL_FRAMEBUFFER, FrameBufferObject);
+#else
 	ASSERT( GLEW_ARB_framebuffer_object || GLEW_EXT_framebuffer_object );
 	if( GLEW_ARB_framebuffer_object )
 	{
@@ -502,6 +511,7 @@ void GL2Renderer::SetRenderTarget( IRenderTarget* const pRenderTarget )
 			glDrawBuffers( pRenderTarget->GetNumSurfaces(), pDrawBuffers );	// There is no glDrawBuffersEXT, it's a core function
 		}
 	}
+#endif
 
 	// GL also requires manually setting the viewport for RTs.
 	{
@@ -535,6 +545,12 @@ void GL2Renderer::SetCubeRenderTarget( IRenderTarget* const pRenderTarget, const
 
 	const GLuint CubemapTextureObject = *static_cast<GLuint*>( m_CurrentRenderTarget->GetColorRenderTargetHandle( Face ) );
 
+#ifdef HAVE_GLES
+	glBindFramebuffer( GL_FRAMEBUFFER, FrameBufferObject );
+	glFramebufferTexture2D( GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GLCubemapTarget[ Face ], CubemapTextureObject, 0 );
+	const GLenum pDrawBuffers[] = { GL_COLOR_ATTACHMENT0 };
+	glDrawBuffers( 1, pDrawBuffers );
+#else
 	ASSERT( GLEW_ARB_framebuffer_object || GLEW_EXT_framebuffer_object );
 	if( GLEW_ARB_framebuffer_object )
 	{
@@ -558,6 +574,7 @@ void GL2Renderer::SetCubeRenderTarget( IRenderTarget* const pRenderTarget, const
 		const GLenum pDrawBuffers[] = { GL_COLOR_ATTACHMENT0_EXT };
 		glDrawBuffers( 1, pDrawBuffers );
 	}
+#endif
 
 	// GL also requires manually setting the viewport for RTs.
 	{
@@ -966,7 +983,9 @@ static GLenum GLTextureAddress[] =
 	GL_REPEAT,
 	GL_MIRRORED_REPEAT,
 	GL_CLAMP_TO_EDGE,
+#ifndef HAVE_GLES
 	GL_CLAMP_TO_BORDER,
+#endif
 };
 
 /*virtual*/ void GL2Renderer::SetAddressing( const uint SamplerStage, const ETextureAddress AddressU, const ETextureAddress AddressV )

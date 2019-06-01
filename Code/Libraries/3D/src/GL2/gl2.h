@@ -1,7 +1,14 @@
 #ifndef GL2_H
 #define GL2_H
 
+#ifdef HAVE_GLES
+#include "GLES3/gl3.h"
+#include "GLES2/gl2ext.h"
+#define glClearDepth glClearDepthf
+#define glDepthRange glDepthRangef
+#else
 #include "GL/glew.h"
+#endif
 #ifdef WIN32
 #include "GL/wglew.h"
 #endif
