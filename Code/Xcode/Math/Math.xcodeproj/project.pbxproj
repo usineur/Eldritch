@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BAE7B261B1A2BC0002D4033 /* convexhull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BAE7B241B1A2BC0002D4033 /* convexhull.cpp */; };
+		6BAE7B271B1A2BC0002D4033 /* convexhull.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAE7B251B1A2BC0002D4033 /* convexhull.h */; };
+		6BD3B467195204340049D4B7 /* aabb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B42F195204340049D4B7 /* aabb.cpp */; };
+		6BD3B468195204340049D4B7 /* aabb.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B430195204340049D4B7 /* aabb.h */; };
+		6BD3B469195204340049D4B7 /* angles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B431195204340049D4B7 /* angles.cpp */; };
+		6BD3B46A195204340049D4B7 /* angles.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B432195204340049D4B7 /* angles.h */; };
+		6BD3B46B195204340049D4B7 /* box2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B433195204340049D4B7 /* box2d.cpp */; };
+		6BD3B46C195204340049D4B7 /* box2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B434195204340049D4B7 /* box2d.h */; };
+		6BD3B46D195204340049D4B7 /* collisioninfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B435195204340049D4B7 /* collisioninfo.cpp */; };
+		6BD3B46E195204340049D4B7 /* collisioninfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B436195204340049D4B7 /* collisioninfo.h */; };
+		6BD3B46F195204340049D4B7 /* collisioninfo2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B437195204340049D4B7 /* collisioninfo2d.cpp */; };
+		6BD3B470195204340049D4B7 /* collisioninfo2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B438195204340049D4B7 /* collisioninfo2d.h */; };
+		6BD3B475195204340049D4B7 /* crypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B43D195204340049D4B7 /* crypto.cpp */; };
+		6BD3B476195204340049D4B7 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B43E195204340049D4B7 /* crypto.h */; };
+		6BD3B477195204340049D4B7 /* cylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B43F195204340049D4B7 /* cylinder.cpp */; };
+		6BD3B478195204340049D4B7 /* cylinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B440195204340049D4B7 /* cylinder.h */; };
+		6BD3B479195204340049D4B7 /* ellipsoid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B441195204340049D4B7 /* ellipsoid.cpp */; };
+		6BD3B47A195204340049D4B7 /* ellipsoid.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B442195204340049D4B7 /* ellipsoid.h */; };
+		6BD3B47B195204340049D4B7 /* frustum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B443195204340049D4B7 /* frustum.cpp */; };
+		6BD3B47C195204340049D4B7 /* frustum.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B444195204340049D4B7 /* frustum.h */; };
+		6BD3B47D195204340049D4B7 /* hsv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B445195204340049D4B7 /* hsv.cpp */; };
+		6BD3B47E195204340049D4B7 /* hsv.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B446195204340049D4B7 /* hsv.h */; };
+		6BD3B47F195204340049D4B7 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B447195204340049D4B7 /* line.cpp */; };
+		6BD3B480195204340049D4B7 /* line.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B448195204340049D4B7 /* line.h */; };
+		6BD3B481195204340049D4B7 /* mathfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B449195204340049D4B7 /* mathfunc.cpp */; };
+		6BD3B482195204340049D4B7 /* mathfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B44A195204340049D4B7 /* mathfunc.h */; };
+		6BD3B483195204340049D4B7 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B44B195204340049D4B7 /* matrix.cpp */; };
+		6BD3B484195204340049D4B7 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B44C195204340049D4B7 /* matrix.h */; };
+		6BD3B485195204340049D4B7 /* noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B44D195204340049D4B7 /* noise.cpp */; };
+		6BD3B486195204340049D4B7 /* noise.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B44E195204340049D4B7 /* noise.h */; };
+		6BD3B487195204340049D4B7 /* plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B44F195204340049D4B7 /* plane.cpp */; };
+		6BD3B488195204340049D4B7 /* plane.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B450195204340049D4B7 /* plane.h */; };
+		6BD3B489195204340049D4B7 /* quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B451195204340049D4B7 /* quat.cpp */; };
+		6BD3B48A195204340049D4B7 /* quat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B452195204340049D4B7 /* quat.h */; };
+		6BD3B48B195204340049D4B7 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B453195204340049D4B7 /* random.cpp */; };
+		6BD3B48C195204340049D4B7 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B454195204340049D4B7 /* random.h */; };
+		6BD3B48D195204340049D4B7 /* ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B455195204340049D4B7 /* ray.cpp */; };
+		6BD3B48E195204340049D4B7 /* ray.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B456195204340049D4B7 /* ray.h */; };
+		6BD3B48F195204340049D4B7 /* segment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B457195204340049D4B7 /* segment.cpp */; };
+		6BD3B490195204340049D4B7 /* segment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B458195204340049D4B7 /* segment.h */; };
+		6BD3B491195204340049D4B7 /* segment2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B459195204340049D4B7 /* segment2d.cpp */; };
+		6BD3B492195204340049D4B7 /* segment2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B45A195204340049D4B7 /* segment2d.h */; };
+		6BD3B493195204340049D4B7 /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B45B195204340049D4B7 /* sphere.cpp */; };
+		6BD3B494195204340049D4B7 /* sphere.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B45C195204340049D4B7 /* sphere.h */; };
+		6BD3B495195204340049D4B7 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B45D195204340049D4B7 /* triangle.cpp */; };
+		6BD3B496195204340049D4B7 /* triangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B45E195204340049D4B7 /* triangle.h */; };
+		6BD3B497195204340049D4B7 /* triangle2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B45F195204340049D4B7 /* triangle2d.cpp */; };
+		6BD3B498195204340049D4B7 /* triangle2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B460195204340049D4B7 /* triangle2d.h */; };
+		6BD3B499195204340049D4B7 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B461195204340049D4B7 /* vector.cpp */; };
+		6BD3B49A195204340049D4B7 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B462195204340049D4B7 /* vector.h */; };
+		6BD3B49B195204340049D4B7 /* vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B463195204340049D4B7 /* vector2.cpp */; };
+		6BD3B49C195204340049D4B7 /* vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B464195204340049D4B7 /* vector2.h */; };
+		6BD3B49D195204340049D4B7 /* vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B465195204340049D4B7 /* vector4.cpp */; };
+		6BD3B49E195204340049D4B7 /* vector4.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B466195204340049D4B7 /* vector4.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6BAE7B241B1A2BC0002D4033 /* convexhull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convexhull.cpp; sourceTree = "<group>"; };
+		6BAE7B251B1A2BC0002D4033 /* convexhull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convexhull.h; sourceTree = "<group>"; };
+		6BD3B421195204250049D4B7 /* libMath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD3B42F195204340049D4B7 /* aabb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aabb.cpp; sourceTree = "<group>"; };
+		6BD3B430195204340049D4B7 /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
+		6BD3B431195204340049D4B7 /* angles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = angles.cpp; sourceTree = "<group>"; };
+		6BD3B432195204340049D4B7 /* angles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = angles.h; sourceTree = "<group>"; };
+		6BD3B433195204340049D4B7 /* box2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = box2d.cpp; sourceTree = "<group>"; };
+		6BD3B434195204340049D4B7 /* box2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = box2d.h; sourceTree = "<group>"; };
+		6BD3B435195204340049D4B7 /* collisioninfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = collisioninfo.cpp; sourceTree = "<group>"; };
+		6BD3B436195204340049D4B7 /* collisioninfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collisioninfo.h; sourceTree = "<group>"; };
+		6BD3B437195204340049D4B7 /* collisioninfo2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = collisioninfo2d.cpp; sourceTree = "<group>"; };
+		6BD3B438195204340049D4B7 /* collisioninfo2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collisioninfo2d.h; sourceTree = "<group>"; };
+		6BD3B43D195204340049D4B7 /* crypto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crypto.cpp; sourceTree = "<group>"; };
+		6BD3B43E195204340049D4B7 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		6BD3B43F195204340049D4B7 /* cylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cylinder.cpp; sourceTree = "<group>"; };
+		6BD3B440195204340049D4B7 /* cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cylinder.h; sourceTree = "<group>"; };
+		6BD3B441195204340049D4B7 /* ellipsoid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ellipsoid.cpp; sourceTree = "<group>"; };
+		6BD3B442195204340049D4B7 /* ellipsoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ellipsoid.h; sourceTree = "<group>"; };
+		6BD3B443195204340049D4B7 /* frustum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frustum.cpp; sourceTree = "<group>"; };
+		6BD3B444195204340049D4B7 /* frustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frustum.h; sourceTree = "<group>"; };
+		6BD3B445195204340049D4B7 /* hsv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hsv.cpp; sourceTree = "<group>"; };
+		6BD3B446195204340049D4B7 /* hsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hsv.h; sourceTree = "<group>"; };
+		6BD3B447195204340049D4B7 /* line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line.cpp; sourceTree = "<group>"; };
+		6BD3B448195204340049D4B7 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.h; sourceTree = "<group>"; };
+		6BD3B449195204340049D4B7 /* mathfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mathfunc.cpp; sourceTree = "<group>"; };
+		6BD3B44A195204340049D4B7 /* mathfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathfunc.h; sourceTree = "<group>"; };
+		6BD3B44B195204340049D4B7 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		6BD3B44C195204340049D4B7 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		6BD3B44D195204340049D4B7 /* noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = noise.cpp; sourceTree = "<group>"; };
+		6BD3B44E195204340049D4B7 /* noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise.h; sourceTree = "<group>"; };
+		6BD3B44F195204340049D4B7 /* plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plane.cpp; sourceTree = "<group>"; };
+		6BD3B450195204340049D4B7 /* plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plane.h; sourceTree = "<group>"; };
+		6BD3B451195204340049D4B7 /* quat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quat.cpp; sourceTree = "<group>"; };
+		6BD3B452195204340049D4B7 /* quat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quat.h; sourceTree = "<group>"; };
+		6BD3B453195204340049D4B7 /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random.cpp; sourceTree = "<group>"; };
+		6BD3B454195204340049D4B7 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		6BD3B455195204340049D4B7 /* ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ray.cpp; sourceTree = "<group>"; };
+		6BD3B456195204340049D4B7 /* ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ray.h; sourceTree = "<group>"; };
+		6BD3B457195204340049D4B7 /* segment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segment.cpp; sourceTree = "<group>"; };
+		6BD3B458195204340049D4B7 /* segment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segment.h; sourceTree = "<group>"; };
+		6BD3B459195204340049D4B7 /* segment2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segment2d.cpp; sourceTree = "<group>"; };
+		6BD3B45A195204340049D4B7 /* segment2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segment2d.h; sourceTree = "<group>"; };
+		6BD3B45B195204340049D4B7 /* sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sphere.cpp; sourceTree = "<group>"; };
+		6BD3B45C195204340049D4B7 /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		6BD3B45D195204340049D4B7 /* triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangle.cpp; sourceTree = "<group>"; };
+		6BD3B45E195204340049D4B7 /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
+		6BD3B45F195204340049D4B7 /* triangle2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangle2d.cpp; sourceTree = "<group>"; };
+		6BD3B460195204340049D4B7 /* triangle2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle2d.h; sourceTree = "<group>"; };
+		6BD3B461195204340049D4B7 /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
+		6BD3B462195204340049D4B7 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		6BD3B463195204340049D4B7 /* vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector2.cpp; sourceTree = "<group>"; };
+		6BD3B464195204340049D4B7 /* vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector2.h; sourceTree = "<group>"; };
+		6BD3B465195204340049D4B7 /* vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector4.cpp; sourceTree = "<group>"; };
+		6BD3B466195204340049D4B7 /* vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector4.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BD3B41E195204250049D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD3B416195204240049D4B7 = {
+			isa = PBXGroup;
+			children = (
+				6BD3B42E195204340049D4B7 /* src */,
+				6BD3B422195204250049D4B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BD3B422195204250049D4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BD3B421195204250049D4B7 /* libMath.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BD3B42E195204340049D4B7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6BAE7B241B1A2BC0002D4033 /* convexhull.cpp */,
+				6BAE7B251B1A2BC0002D4033 /* convexhull.h */,
+				6BD3B42F195204340049D4B7 /* aabb.cpp */,
+				6BD3B430195204340049D4B7 /* aabb.h */,
+				6BD3B431195204340049D4B7 /* angles.cpp */,
+				6BD3B432195204340049D4B7 /* angles.h */,
+				6BD3B433195204340049D4B7 /* box2d.cpp */,
+				6BD3B434195204340049D4B7 /* box2d.h */,
+				6BD3B435195204340049D4B7 /* collisioninfo.cpp */,
+				6BD3B436195204340049D4B7 /* collisioninfo.h */,
+				6BD3B437195204340049D4B7 /* collisioninfo2d.cpp */,
+				6BD3B438195204340049D4B7 /* collisioninfo2d.h */,
+				6BD3B43D195204340049D4B7 /* crypto.cpp */,
+				6BD3B43E195204340049D4B7 /* crypto.h */,
+				6BD3B43F195204340049D4B7 /* cylinder.cpp */,
+				6BD3B440195204340049D4B7 /* cylinder.h */,
+				6BD3B441195204340049D4B7 /* ellipsoid.cpp */,
+				6BD3B442195204340049D4B7 /* ellipsoid.h */,
+				6BD3B443195204340049D4B7 /* frustum.cpp */,
+				6BD3B444195204340049D4B7 /* frustum.h */,
+				6BD3B445195204340049D4B7 /* hsv.cpp */,
+				6BD3B446195204340049D4B7 /* hsv.h */,
+				6BD3B447195204340049D4B7 /* line.cpp */,
+				6BD3B448195204340049D4B7 /* line.h */,
+				6BD3B449195204340049D4B7 /* mathfunc.cpp */,
+				6BD3B44A195204340049D4B7 /* mathfunc.h */,
+				6BD3B44B195204340049D4B7 /* matrix.cpp */,
+				6BD3B44C195204340049D4B7 /* matrix.h */,
+				6BD3B44D195204340049D4B7 /* noise.cpp */,
+				6BD3B44E195204340049D4B7 /* noise.h */,
+				6BD3B44F195204340049D4B7 /* plane.cpp */,
+				6BD3B450195204340049D4B7 /* plane.h */,
+				6BD3B451195204340049D4B7 /* quat.cpp */,
+				6BD3B452195204340049D4B7 /* quat.h */,
+				6BD3B453195204340049D4B7 /* random.cpp */,
+				6BD3B454195204340049D4B7 /* random.h */,
+				6BD3B455195204340049D4B7 /* ray.cpp */,
+				6BD3B456195204340049D4B7 /* ray.h */,
+				6BD3B457195204340049D4B7 /* segment.cpp */,
+				6BD3B458195204340049D4B7 /* segment.h */,
+				6BD3B459195204340049D4B7 /* segment2d.cpp */,
+				6BD3B45A195204340049D4B7 /* segment2d.h */,
+				6BD3B45B195204340049D4B7 /* sphere.cpp */,
+				6BD3B45C195204340049D4B7 /* sphere.h */,
+				6BD3B45D195204340049D4B7 /* triangle.cpp */,
+				6BD3B45E195204340049D4B7 /* triangle.h */,
+				6BD3B45F195204340049D4B7 /* triangle2d.cpp */,
+				6BD3B460195204340049D4B7 /* triangle2d.h */,
+				6BD3B461195204340049D4B7 /* vector.cpp */,
+				6BD3B462195204340049D4B7 /* vector.h */,
+				6BD3B463195204340049D4B7 /* vector2.cpp */,
+				6BD3B464195204340049D4B7 /* vector2.h */,
+				6BD3B465195204340049D4B7 /* vector4.cpp */,
+				6BD3B466195204340049D4B7 /* vector4.h */,
+			);
+			name = src;
+			path = ../../Libraries/Math/src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BD3B41F195204250049D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B468195204340049D4B7 /* aabb.h in Headers */,
+				6BD3B46A195204340049D4B7 /* angles.h in Headers */,
+				6BD3B46C195204340049D4B7 /* box2d.h in Headers */,
+				6BD3B46E195204340049D4B7 /* collisioninfo.h in Headers */,
+				6BD3B470195204340049D4B7 /* collisioninfo2d.h in Headers */,
+				6BD3B476195204340049D4B7 /* crypto.h in Headers */,
+				6BD3B478195204340049D4B7 /* cylinder.h in Headers */,
+				6BD3B47A195204340049D4B7 /* ellipsoid.h in Headers */,
+				6BD3B47C195204340049D4B7 /* frustum.h in Headers */,
+				6BD3B47E195204340049D4B7 /* hsv.h in Headers */,
+				6BD3B480195204340049D4B7 /* line.h in Headers */,
+				6BD3B482195204340049D4B7 /* mathfunc.h in Headers */,
+				6BD3B484195204340049D4B7 /* matrix.h in Headers */,
+				6BD3B486195204340049D4B7 /* noise.h in Headers */,
+				6BD3B488195204340049D4B7 /* plane.h in Headers */,
+				6BD3B48A195204340049D4B7 /* quat.h in Headers */,
+				6BD3B48C195204340049D4B7 /* random.h in Headers */,
+				6BD3B48E195204340049D4B7 /* ray.h in Headers */,
+				6BD3B490195204340049D4B7 /* segment.h in Headers */,
+				6BD3B492195204340049D4B7 /* segment2d.h in Headers */,
+				6BD3B494195204340049D4B7 /* sphere.h in Headers */,
+				6BD3B496195204340049D4B7 /* triangle.h in Headers */,
+				6BD3B498195204340049D4B7 /* triangle2d.h in Headers */,
+				6BD3B49A195204340049D4B7 /* vector.h in Headers */,
+				6BD3B49C195204340049D4B7 /* vector2.h in Headers */,
+				6BD3B49E195204340049D4B7 /* vector4.h in Headers */,
+				6BAE7B271B1A2BC0002D4033 /* convexhull.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BD3B420195204250049D4B7 /* Math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD3B425195204250049D4B7 /* Build configuration list for PBXNativeTarget "Math" */;
+			buildPhases = (
+				6BD3B41D195204250049D4B7 /* Sources */,
+				6BD3B41E195204250049D4B7 /* Frameworks */,
+				6BD3B41F195204250049D4B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Math;
+			productName = Math;
+			productReference = 6BD3B421195204250049D4B7 /* libMath.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BD3B418195204240049D4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 6BD3B41B195204240049D4B7 /* Build configuration list for PBXProject "Math" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BD3B416195204240049D4B7;
+			productRefGroup = 6BD3B422195204250049D4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD3B420195204250049D4B7 /* Math */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD3B41D195204250049D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B467195204340049D4B7 /* aabb.cpp in Sources */,
+				6BD3B469195204340049D4B7 /* angles.cpp in Sources */,
+				6BD3B46B195204340049D4B7 /* box2d.cpp in Sources */,
+				6BD3B46D195204340049D4B7 /* collisioninfo.cpp in Sources */,
+				6BD3B46F195204340049D4B7 /* collisioninfo2d.cpp in Sources */,
+				6BD3B475195204340049D4B7 /* crypto.cpp in Sources */,
+				6BD3B477195204340049D4B7 /* cylinder.cpp in Sources */,
+				6BD3B479195204340049D4B7 /* ellipsoid.cpp in Sources */,
+				6BD3B47B195204340049D4B7 /* frustum.cpp in Sources */,
+				6BD3B47D195204340049D4B7 /* hsv.cpp in Sources */,
+				6BD3B47F195204340049D4B7 /* line.cpp in Sources */,
+				6BD3B481195204340049D4B7 /* mathfunc.cpp in Sources */,
+				6BD3B483195204340049D4B7 /* matrix.cpp in Sources */,
+				6BD3B485195204340049D4B7 /* noise.cpp in Sources */,
+				6BD3B487195204340049D4B7 /* plane.cpp in Sources */,
+				6BD3B489195204340049D4B7 /* quat.cpp in Sources */,
+				6BD3B48B195204340049D4B7 /* random.cpp in Sources */,
+				6BD3B48D195204340049D4B7 /* ray.cpp in Sources */,
+				6BD3B48F195204340049D4B7 /* segment.cpp in Sources */,
+				6BD3B491195204340049D4B7 /* segment2d.cpp in Sources */,
+				6BD3B493195204340049D4B7 /* sphere.cpp in Sources */,
+				6BD3B495195204340049D4B7 /* triangle.cpp in Sources */,
+				6BD3B497195204340049D4B7 /* triangle2d.cpp in Sources */,
+				6BD3B499195204340049D4B7 /* vector.cpp in Sources */,
+				6BD3B49B195204340049D4B7 /* vector2.cpp in Sources */,
+				6BD3B49D195204340049D4B7 /* vector4.cpp in Sources */,
+				6BAE7B261B1A2BC0002D4033 /* convexhull.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6BD3B423195204250049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6BD3B424195204250049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6BD3B426195204250049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		6BD3B427195204250049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _FINAL;
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BD3B41B195204240049D4B7 /* Build configuration list for PBXProject "Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B423195204250049D4B7 /* Debug */,
+				6BD3B424195204250049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD3B425195204250049D4B7 /* Build configuration list for PBXNativeTarget "Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B426195204250049D4B7 /* Debug */,
+				6BD3B427195204250049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BD3B418195204240049D4B7 /* Project object */;
+}

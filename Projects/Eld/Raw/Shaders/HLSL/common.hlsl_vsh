@@ -1,0 +1,10 @@
+row_major float4x4 WVP;
+row_major float4x4 WorldMatrix;
+
+// x = -1/w, y = 1/h
+float4 HalfPixelOffsetFix;
+
+float4 FixHalfPixelOffset( const float4 p )
+{
+	return float4( p.xy + HalfPixelOffsetFix.xy * p.w, p.zw );
+}

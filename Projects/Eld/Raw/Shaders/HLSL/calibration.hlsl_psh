@@ -1,0 +1,13 @@
+// Pared down version of Couriers's calibration; brightness and contrast are worthless.
+
+uniform float Gamma;
+
+float Luma( const float3 Color )
+{
+	return dot( Color, float3( 0.299f, 0.587f, 0.114f ) );
+}
+
+float3 Calibrate( float3 Color )
+{
+	return pow( saturate( Color.rgb ), Gamma );
+}

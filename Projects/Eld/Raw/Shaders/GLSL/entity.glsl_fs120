@@ -1,0 +1,80 @@
+#version 120
+
+// ****************************************************************
+// BEGIN LIGHTING
+
+uniform vec4 LightCube[6];
+
+vec4 GetCubeLight( vec3 InNormal )
+{
+	vec3	NormalSquared	= InNormal * InNormal;
+	ivec3	IsNegative		= ivec3( lessThan( InNormal, vec3( 0.0f ) ) );
+	return
+		NormalSquared.x * LightCube[ IsNegative.x ] +
+		NormalSquared.y * LightCube[ IsNegative.y + 2 ] +
+		NormalSquared.z * LightCube[ IsNegative.z + 4 ];
+}
+
+// END LIGHTING
+// ****************************************************************
+
+// ****************************************************************
+// BEGIN FOG
+
+float	FogTexSize	= 32.0f;
+float	FogOffsetU	= 0.5f / FogTexSize;
+float	FogScaleU	= ( FogTexSize - 1.0f ) / FogTexSize;
+
+uniform vec4	FogViewPosition;	// Set from code, used as vec3
+uniform vec4	FogParams;			// Set from code: x = near, y = 1/(far-near)
+
+// Scales and clamps depth to [0,1] based on 
+float ScaleDepth( float InDepth )
+{
+	float ScaledDepth = ( InDepth - FogParams.x ) * FogParams.y;
+	return clamp( ScaledDepth, 0.0f, 1.0f );
+}
+
+float ScaleDepthFromView( vec3 PositionWS )
+{
+	float Depth = distance( FogViewPosition.xyz, PositionWS );
+	return ScaleDepth( Depth );
+}
+
+vec4 GetFog( vec3 PositionWS, sampler2D FogSampler )
+{
+	float	Depth		= ScaleDepthFromView( PositionWS );
+	float	FogU		= Depth * FogScaleU + FogOffsetU;
+	vec2	FogUV		= vec2( FogU, 0.0f );
+	vec4	FogValue	= texture2D( FogSampler, FogUV );
+
+	return FogValue;
+}
+
+vec4 BlendFog( vec4 FogValue, vec4 Color )
+{
+	float	FogAlpha		= FogValue.a;
+	vec4	FogColor		= vec4( FogValue.rgb, Color.a );
+	vec4	BlendedColor	= mix( Color, FogColor, FogAlpha );
+
+	return BlendedColor;
+}
+
+// END FOG
+// ****************************************************************
+
+uniform sampler2D Texture0;	// Diffuse
+uniform sampler2D Texture1;	// Fog LUT
+
+varying vec2	PassUV;
+varying vec3	PassNormal;
+varying vec3	PassPositionWS;
+
+void main()
+{
+	vec4 DiffuseColor	= texture2D( Texture0, PassUV );
+	vec4 LightColor		= GetCubeLight( normalize( PassNormal ) );
+	vec4 FogValue		= GetFog( PassPositionWS, Texture1 );
+
+	gl_FragColor		= BlendFog( FogValue, DiffuseColor * LightColor );
+}

@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B0E82721C2354DB00521B86 /* wbpegetconfigvar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0E82701C2354DB00521B86 /* wbpegetconfigvar.cpp */; };
+		6B0E82731C2354DB00521B86 /* wbpegetconfigvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0E82711C2354DB00521B86 /* wbpegetconfigvar.h */; };
+		6B0E85851CAEEDB000521B86 /* wbpeconstantangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0E85811CAEEDB000521B86 /* wbpeconstantangles.cpp */; };
+		6B0E85861CAEEDB000521B86 /* wbpeconstantangles.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0E85821CAEEDB000521B86 /* wbpeconstantangles.h */; };
+		6B0E85871CAEEDB000521B86 /* wbpeneg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0E85831CAEEDB000521B86 /* wbpeneg.cpp */; };
+		6B0E85881CAEEDB000521B86 /* wbpeneg.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0E85841CAEEDB000521B86 /* wbpeneg.h */; };
+		6B277D7819A85CB2001E3321 /* wbactionsetstate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B277D7619A85CB2001E3321 /* wbactionsetstate.cpp */; };
+		6B277D7919A85CB2001E3321 /* wbactionsetstate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B277D7719A85CB2001E3321 /* wbactionsetstate.h */; };
+		6B277D7C19A85CC2001E3321 /* wbpeisstate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B277D7A19A85CC2001E3321 /* wbpeisstate.cpp */; };
+		6B277D7D19A85CC2001E3321 /* wbpeisstate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B277D7B19A85CC2001E3321 /* wbpeisstate.h */; };
+		6B89F5E6220F743000BEEEE7 /* wbpereactionsself.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B89F5E4220F743000BEEEE7 /* wbpereactionsself.cpp */; };
+		6B89F5E7220F743000BEEEE7 /* wbpereactionsself.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B89F5E5220F743000BEEEE7 /* wbpereactionsself.h */; };
+		6BD3B7561952072D0049D4B7 /* wbactioncomposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6BB1952072D0049D4B7 /* wbactioncomposite.cpp */; };
+		6BD3B7571952072D0049D4B7 /* wbactioncomposite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6BC1952072D0049D4B7 /* wbactioncomposite.h */; };
+		6BD3B7581952072D0049D4B7 /* wbactiondestroy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6BD1952072D0049D4B7 /* wbactiondestroy.cpp */; };
+		6BD3B7591952072D0049D4B7 /* wbactiondestroy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6BE1952072D0049D4B7 /* wbactiondestroy.h */; };
+		6BD3B75A1952072D0049D4B7 /* wbactionlog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6BF1952072D0049D4B7 /* wbactionlog.cpp */; };
+		6BD3B75B1952072D0049D4B7 /* wbactionlog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6C01952072D0049D4B7 /* wbactionlog.h */; };
+		6BD3B75C1952072D0049D4B7 /* wbactionselector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6C11952072D0049D4B7 /* wbactionselector.cpp */; };
+		6BD3B75D1952072D0049D4B7 /* wbactionselector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6C21952072D0049D4B7 /* wbactionselector.h */; };
+		6BD3B75E1952072D0049D4B7 /* wbactionsendevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6C31952072D0049D4B7 /* wbactionsendevent.cpp */; };
+		6BD3B75F1952072D0049D4B7 /* wbactionsendevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6C41952072D0049D4B7 /* wbactionsendevent.h */; };
+		6BD3B7601952072D0049D4B7 /* wbactionsetconfigvar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6C51952072D0049D4B7 /* wbactionsetconfigvar.cpp */; };
+		6BD3B7611952072D0049D4B7 /* wbactionsetconfigvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6C61952072D0049D4B7 /* wbactionsetconfigvar.h */; };
+		6BD3B7621952072D0049D4B7 /* wbactionsetvariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6C71952072D0049D4B7 /* wbactionsetvariable.cpp */; };
+		6BD3B7631952072D0049D4B7 /* wbactionsetvariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6C81952072D0049D4B7 /* wbactionsetvariable.h */; };
+		6BD3B7641952072D0049D4B7 /* wbactiontriggerstatmod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6C91952072D0049D4B7 /* wbactiontriggerstatmod.cpp */; };
+		6BD3B7651952072D0049D4B7 /* wbactiontriggerstatmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6CA1952072D0049D4B7 /* wbactiontriggerstatmod.h */; };
+		6BD3B7661952072D0049D4B7 /* wbactionunqueueevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6CB1952072D0049D4B7 /* wbactionunqueueevent.cpp */; };
+		6BD3B7671952072D0049D4B7 /* wbactionunqueueevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6CC1952072D0049D4B7 /* wbactionunqueueevent.h */; };
+		6BD3B7681952072D0049D4B7 /* wbcomplabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6CE1952072D0049D4B7 /* wbcomplabel.cpp */; };
+		6BD3B7691952072D0049D4B7 /* wbcomplabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6CF1952072D0049D4B7 /* wbcomplabel.h */; };
+		6BD3B76A1952072D0049D4B7 /* wbcompowner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6D01952072D0049D4B7 /* wbcompowner.cpp */; };
+		6BD3B76B1952072D0049D4B7 /* wbcompowner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6D11952072D0049D4B7 /* wbcompowner.h */; };
+		6BD3B76C1952072D0049D4B7 /* wbcomppemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6D21952072D0049D4B7 /* wbcomppemap.cpp */; };
+		6BD3B76D1952072D0049D4B7 /* wbcomppemap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6D31952072D0049D4B7 /* wbcomppemap.h */; };
+		6BD3B76E1952072D0049D4B7 /* wbcompreactions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6D41952072D0049D4B7 /* wbcompreactions.cpp */; };
+		6BD3B76F1952072D0049D4B7 /* wbcompreactions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6D51952072D0049D4B7 /* wbcompreactions.h */; };
+		6BD3B7701952072D0049D4B7 /* wbcompstate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6D61952072D0049D4B7 /* wbcompstate.cpp */; };
+		6BD3B7711952072D0049D4B7 /* wbcompstate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6D71952072D0049D4B7 /* wbcompstate.h */; };
+		6BD3B7721952072D0049D4B7 /* wbcompstatmod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6D81952072D0049D4B7 /* wbcompstatmod.cpp */; };
+		6BD3B7731952072D0049D4B7 /* wbcompstatmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6D91952072D0049D4B7 /* wbcompstatmod.h */; };
+		6BD3B7741952072D0049D4B7 /* wbcomptransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6DA1952072D0049D4B7 /* wbcomptransform.cpp */; };
+		6BD3B7751952072D0049D4B7 /* wbcomptransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6DB1952072D0049D4B7 /* wbcomptransform.h */; };
+		6BD3B7761952072D0049D4B7 /* wbcompvariablemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6DC1952072D0049D4B7 /* wbcompvariablemap.cpp */; };
+		6BD3B7771952072D0049D4B7 /* wbcompvariablemap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6DD1952072D0049D4B7 /* wbcompvariablemap.h */; };
+		6BD3B7781952072D0049D4B7 /* iwbeventobserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6DE1952072D0049D4B7 /* iwbeventobserver.h */; };
+		6BD3B7791952072D0049D4B7 /* wbpeabs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6E01952072D0049D4B7 /* wbpeabs.cpp */; };
+		6BD3B77A1952072D0049D4B7 /* wbpeabs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6E11952072D0049D4B7 /* wbpeabs.h */; };
+		6BD3B77B1952072D0049D4B7 /* wbpeadd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6E21952072D0049D4B7 /* wbpeadd.cpp */; };
+		6BD3B77C1952072D0049D4B7 /* wbpeadd.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6E31952072D0049D4B7 /* wbpeadd.h */; };
+		6BD3B77D1952072D0049D4B7 /* wbpeand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6E41952072D0049D4B7 /* wbpeand.cpp */; };
+		6BD3B77E1952072D0049D4B7 /* wbpeand.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6E51952072D0049D4B7 /* wbpeand.h */; };
+		6BD3B77F1952072D0049D4B7 /* wbpebinaryop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6E61952072D0049D4B7 /* wbpebinaryop.cpp */; };
+		6BD3B7801952072D0049D4B7 /* wbpebinaryop.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6E71952072D0049D4B7 /* wbpebinaryop.h */; };
+		6BD3B7811952072D0049D4B7 /* wbpeconditional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6E81952072D0049D4B7 /* wbpeconditional.cpp */; };
+		6BD3B7821952072D0049D4B7 /* wbpeconditional.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6E91952072D0049D4B7 /* wbpeconditional.h */; };
+		6BD3B7831952072D0049D4B7 /* wbpeconstantbool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6EA1952072D0049D4B7 /* wbpeconstantbool.cpp */; };
+		6BD3B7841952072D0049D4B7 /* wbpeconstantbool.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6EB1952072D0049D4B7 /* wbpeconstantbool.h */; };
+		6BD3B7851952072D0049D4B7 /* wbpeconstantfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6EC1952072D0049D4B7 /* wbpeconstantfloat.cpp */; };
+		6BD3B7861952072D0049D4B7 /* wbpeconstantfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6ED1952072D0049D4B7 /* wbpeconstantfloat.h */; };
+		6BD3B7871952072D0049D4B7 /* wbpeconstantint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6EE1952072D0049D4B7 /* wbpeconstantint.cpp */; };
+		6BD3B7881952072D0049D4B7 /* wbpeconstantint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6EF1952072D0049D4B7 /* wbpeconstantint.h */; };
+		6BD3B7891952072D0049D4B7 /* wbpeconstantstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6F01952072D0049D4B7 /* wbpeconstantstring.cpp */; };
+		6BD3B78A1952072D0049D4B7 /* wbpeconstantstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6F11952072D0049D4B7 /* wbpeconstantstring.h */; };
+		6BD3B78B1952072D0049D4B7 /* wbpeconstantvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6F21952072D0049D4B7 /* wbpeconstantvector.cpp */; };
+		6BD3B78C1952072D0049D4B7 /* wbpeconstantvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6F31952072D0049D4B7 /* wbpeconstantvector.h */; };
+		6BD3B78D1952072D0049D4B7 /* wbpecross.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6F41952072D0049D4B7 /* wbpecross.cpp */; };
+		6BD3B78E1952072D0049D4B7 /* wbpecross.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6F51952072D0049D4B7 /* wbpecross.h */; };
+		6BD3B78F1952072D0049D4B7 /* wbpediv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6F61952072D0049D4B7 /* wbpediv.cpp */; };
+		6BD3B7901952072D0049D4B7 /* wbpediv.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6F71952072D0049D4B7 /* wbpediv.h */; };
+		6BD3B7911952072D0049D4B7 /* wbpedot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6F81952072D0049D4B7 /* wbpedot.cpp */; };
+		6BD3B7921952072D0049D4B7 /* wbpedot.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6F91952072D0049D4B7 /* wbpedot.h */; };
+		6BD3B7931952072D0049D4B7 /* wbpegetentitybylabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6FA1952072D0049D4B7 /* wbpegetentitybylabel.cpp */; };
+		6BD3B7941952072D0049D4B7 /* wbpegetentitybylabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6FB1952072D0049D4B7 /* wbpegetentitybylabel.h */; };
+		6BD3B7951952072D0049D4B7 /* wbpegetname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6FC1952072D0049D4B7 /* wbpegetname.cpp */; };
+		6BD3B7961952072D0049D4B7 /* wbpegetname.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6FD1952072D0049D4B7 /* wbpegetname.h */; };
+		6BD3B7971952072D0049D4B7 /* wbpegetstate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B6FE1952072D0049D4B7 /* wbpegetstate.cpp */; };
+		6BD3B7981952072D0049D4B7 /* wbpegetstate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B6FF1952072D0049D4B7 /* wbpegetstate.h */; };
+		6BD3B7991952072D0049D4B7 /* wbpegetvariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7001952072D0049D4B7 /* wbpegetvariable.cpp */; };
+		6BD3B79A1952072D0049D4B7 /* wbpegetvariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7011952072D0049D4B7 /* wbpegetvariable.h */; };
+		6BD3B79B1952072D0049D4B7 /* wbpelength.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7021952072D0049D4B7 /* wbpelength.cpp */; };
+		6BD3B79C1952072D0049D4B7 /* wbpelength.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7031952072D0049D4B7 /* wbpelength.h */; };
+		6BD3B79D1952072D0049D4B7 /* wbpelookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7041952072D0049D4B7 /* wbpelookup.cpp */; };
+		6BD3B79E1952072D0049D4B7 /* wbpelookup.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7051952072D0049D4B7 /* wbpelookup.h */; };
+		6BD3B79F1952072D0049D4B7 /* wbpemax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7061952072D0049D4B7 /* wbpemax.cpp */; };
+		6BD3B7A01952072D0049D4B7 /* wbpemax.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7071952072D0049D4B7 /* wbpemax.h */; };
+		6BD3B7A11952072D0049D4B7 /* wbpemin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7081952072D0049D4B7 /* wbpemin.cpp */; };
+		6BD3B7A21952072D0049D4B7 /* wbpemin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7091952072D0049D4B7 /* wbpemin.h */; };
+		6BD3B7A31952072D0049D4B7 /* wbpemul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B70A1952072D0049D4B7 /* wbpemul.cpp */; };
+		6BD3B7A41952072D0049D4B7 /* wbpemul.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B70B1952072D0049D4B7 /* wbpemul.h */; };
+		6BD3B7A51952072D0049D4B7 /* wbpenormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B70C1952072D0049D4B7 /* wbpenormal.cpp */; };
+		6BD3B7A61952072D0049D4B7 /* wbpenormal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B70D1952072D0049D4B7 /* wbpenormal.h */; };
+		6BD3B7A71952072D0049D4B7 /* wbpenot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B70E1952072D0049D4B7 /* wbpenot.cpp */; };
+		6BD3B7A81952072D0049D4B7 /* wbpenot.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B70F1952072D0049D4B7 /* wbpenot.h */; };
+		6BD3B7A91952072D0049D4B7 /* wbpenull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7101952072D0049D4B7 /* wbpenull.cpp */; };
+		6BD3B7AA1952072D0049D4B7 /* wbpenull.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7111952072D0049D4B7 /* wbpenull.h */; };
+		6BD3B7AB1952072D0049D4B7 /* wbpeor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7121952072D0049D4B7 /* wbpeor.cpp */; };
+		6BD3B7AC1952072D0049D4B7 /* wbpeor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7131952072D0049D4B7 /* wbpeor.h */; };
+		6BD3B7AD1952072D0049D4B7 /* wbpeowner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7141952072D0049D4B7 /* wbpeowner.cpp */; };
+		6BD3B7AE1952072D0049D4B7 /* wbpeowner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7151952072D0049D4B7 /* wbpeowner.h */; };
+		6BD3B7AF1952072D0049D4B7 /* wbpepow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7161952072D0049D4B7 /* wbpepow.cpp */; };
+		6BD3B7B01952072D0049D4B7 /* wbpepow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7171952072D0049D4B7 /* wbpepow.h */; };
+		6BD3B7B11952072D0049D4B7 /* wbpepushcontext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7181952072D0049D4B7 /* wbpepushcontext.cpp */; };
+		6BD3B7B21952072D0049D4B7 /* wbpepushcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7191952072D0049D4B7 /* wbpepushcontext.h */; };
+		6BD3B7B31952072D0049D4B7 /* wbpequeryactionstack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B71A1952072D0049D4B7 /* wbpequeryactionstack.cpp */; };
+		6BD3B7B41952072D0049D4B7 /* wbpequeryactionstack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B71B1952072D0049D4B7 /* wbpequeryactionstack.h */; };
+		6BD3B7B51952072D0049D4B7 /* wbperandombool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B71C1952072D0049D4B7 /* wbperandombool.cpp */; };
+		6BD3B7B61952072D0049D4B7 /* wbperandombool.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B71D1952072D0049D4B7 /* wbperandombool.h */; };
+		6BD3B7B71952072D0049D4B7 /* wbperandomfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B71E1952072D0049D4B7 /* wbperandomfloat.cpp */; };
+		6BD3B7B81952072D0049D4B7 /* wbperandomfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B71F1952072D0049D4B7 /* wbperandomfloat.h */; };
+		6BD3B7B91952072D0049D4B7 /* wbperandomint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7201952072D0049D4B7 /* wbperandomint.cpp */; };
+		6BD3B7BA1952072D0049D4B7 /* wbperandomint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7211952072D0049D4B7 /* wbperandomint.h */; };
+		6BD3B7BB1952072D0049D4B7 /* wbperandomvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7221952072D0049D4B7 /* wbperandomvector.cpp */; };
+		6BD3B7BC1952072D0049D4B7 /* wbperandomvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7231952072D0049D4B7 /* wbperandomvector.h */; };
+		6BD3B7BD1952072D0049D4B7 /* wbpesaturate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7241952072D0049D4B7 /* wbpesaturate.cpp */; };
+		6BD3B7BE1952072D0049D4B7 /* wbpesaturate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7251952072D0049D4B7 /* wbpesaturate.h */; };
+		6BD3B7BF1952072D0049D4B7 /* wbpeselector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7261952072D0049D4B7 /* wbpeselector.cpp */; };
+		6BD3B7C01952072D0049D4B7 /* wbpeselector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7271952072D0049D4B7 /* wbpeselector.h */; };
+		6BD3B7C11952072D0049D4B7 /* wbpeself.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7281952072D0049D4B7 /* wbpeself.cpp */; };
+		6BD3B7C21952072D0049D4B7 /* wbpeself.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7291952072D0049D4B7 /* wbpeself.h */; };
+		6BD3B7C31952072D0049D4B7 /* wbpesquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B72A1952072D0049D4B7 /* wbpesquare.cpp */; };
+		6BD3B7C41952072D0049D4B7 /* wbpesquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B72B1952072D0049D4B7 /* wbpesquare.h */; };
+		6BD3B7C51952072D0049D4B7 /* wbpestatmod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B72C1952072D0049D4B7 /* wbpestatmod.cpp */; };
+		6BD3B7C61952072D0049D4B7 /* wbpestatmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B72D1952072D0049D4B7 /* wbpestatmod.h */; };
+		6BD3B7C71952072D0049D4B7 /* wbpesub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B72E1952072D0049D4B7 /* wbpesub.cpp */; };
+		6BD3B7C81952072D0049D4B7 /* wbpesub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B72F1952072D0049D4B7 /* wbpesub.h */; };
+		6BD3B7C91952072D0049D4B7 /* wbpeunaryop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7301952072D0049D4B7 /* wbpeunaryop.cpp */; };
+		6BD3B7CA1952072D0049D4B7 /* wbpeunaryop.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7311952072D0049D4B7 /* wbpeunaryop.h */; };
+		6BD3B7CB1952072D0049D4B7 /* wbpexor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7321952072D0049D4B7 /* wbpexor.cpp */; };
+		6BD3B7CC1952072D0049D4B7 /* wbpexor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7331952072D0049D4B7 /* wbpexor.h */; };
+		6BD3B7CD1952072D0049D4B7 /* wbaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7341952072D0049D4B7 /* wbaction.cpp */; };
+		6BD3B7CE1952072D0049D4B7 /* wbaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7351952072D0049D4B7 /* wbaction.h */; };
+		6BD3B7CF1952072D0049D4B7 /* wbactionfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7361952072D0049D4B7 /* wbactionfactory.cpp */; };
+		6BD3B7D01952072D0049D4B7 /* wbactionfactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7371952072D0049D4B7 /* wbactionfactory.h */; };
+		6BD3B7D11952072D0049D4B7 /* wbactions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7381952072D0049D4B7 /* wbactions.h */; };
+		6BD3B7D21952072D0049D4B7 /* wbactionstack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7391952072D0049D4B7 /* wbactionstack.cpp */; };
+		6BD3B7D31952072D0049D4B7 /* wbactionstack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B73A1952072D0049D4B7 /* wbactionstack.h */; };
+		6BD3B7D41952072D0049D4B7 /* wbcomponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B73B1952072D0049D4B7 /* wbcomponent.cpp */; };
+		6BD3B7D51952072D0049D4B7 /* wbcomponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B73C1952072D0049D4B7 /* wbcomponent.h */; };
+		6BD3B7D61952072D0049D4B7 /* wbcomponentarrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B73D1952072D0049D4B7 /* wbcomponentarrays.cpp */; };
+		6BD3B7D71952072D0049D4B7 /* wbcomponentarrays.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B73E1952072D0049D4B7 /* wbcomponentarrays.h */; };
+		6BD3B7D81952072D0049D4B7 /* wbcomponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B73F1952072D0049D4B7 /* wbcomponents.h */; };
+		6BD3B7D91952072D0049D4B7 /* wbentity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7401952072D0049D4B7 /* wbentity.cpp */; };
+		6BD3B7DA1952072D0049D4B7 /* wbentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7411952072D0049D4B7 /* wbentity.h */; };
+		6BD3B7DB1952072D0049D4B7 /* wbentityref.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7421952072D0049D4B7 /* wbentityref.h */; };
+		6BD3B7DC1952072D0049D4B7 /* wbevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7431952072D0049D4B7 /* wbevent.cpp */; };
+		6BD3B7DD1952072D0049D4B7 /* wbevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7441952072D0049D4B7 /* wbevent.h */; };
+		6BD3B7DE1952072D0049D4B7 /* wbeventmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7451952072D0049D4B7 /* wbeventmanager.cpp */; };
+		6BD3B7DF1952072D0049D4B7 /* wbeventmanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7461952072D0049D4B7 /* wbeventmanager.h */; };
+		6BD3B7E01952072D0049D4B7 /* wbparamevaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7471952072D0049D4B7 /* wbparamevaluator.cpp */; };
+		6BD3B7E11952072D0049D4B7 /* wbparamevaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7481952072D0049D4B7 /* wbparamevaluator.h */; };
+		6BD3B7E21952072D0049D4B7 /* wbparamevaluatorfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7491952072D0049D4B7 /* wbparamevaluatorfactory.cpp */; };
+		6BD3B7E31952072D0049D4B7 /* wbparamevaluatorfactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B74A1952072D0049D4B7 /* wbparamevaluatorfactory.h */; };
+		6BD3B7E41952072D0049D4B7 /* wbpatternmatching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B74B1952072D0049D4B7 /* wbpatternmatching.cpp */; };
+		6BD3B7E51952072D0049D4B7 /* wbpatternmatching.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B74C1952072D0049D4B7 /* wbpatternmatching.h */; };
+		6BD3B7E61952072D0049D4B7 /* wbpe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B74D1952072D0049D4B7 /* wbpe.cpp */; };
+		6BD3B7E71952072D0049D4B7 /* wbpe.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B74E1952072D0049D4B7 /* wbpe.h */; };
+		6BD3B7E81952072D0049D4B7 /* wbpes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B74F1952072D0049D4B7 /* wbpes.h */; };
+		6BD3B7E91952072D0049D4B7 /* wbrule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7501952072D0049D4B7 /* wbrule.cpp */; };
+		6BD3B7EA1952072D0049D4B7 /* wbrule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7511952072D0049D4B7 /* wbrule.h */; };
+		6BD3B7EB1952072D0049D4B7 /* wbscene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7521952072D0049D4B7 /* wbscene.cpp */; };
+		6BD3B7EC1952072D0049D4B7 /* wbscene.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7531952072D0049D4B7 /* wbscene.h */; };
+		6BD3B7ED1952072D0049D4B7 /* wbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B7541952072D0049D4B7 /* wbworld.cpp */; };
+		6BD3B7EE1952072D0049D4B7 /* wbworld.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B7551952072D0049D4B7 /* wbworld.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B0E82701C2354DB00521B86 /* wbpegetconfigvar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpegetconfigvar.cpp; sourceTree = "<group>"; };
+		6B0E82711C2354DB00521B86 /* wbpegetconfigvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpegetconfigvar.h; sourceTree = "<group>"; };
+		6B0E85811CAEEDB000521B86 /* wbpeconstantangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantangles.cpp; sourceTree = "<group>"; };
+		6B0E85821CAEEDB000521B86 /* wbpeconstantangles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantangles.h; sourceTree = "<group>"; };
+		6B0E85831CAEEDB000521B86 /* wbpeneg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeneg.cpp; sourceTree = "<group>"; };
+		6B0E85841CAEEDB000521B86 /* wbpeneg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeneg.h; sourceTree = "<group>"; };
+		6B277D7619A85CB2001E3321 /* wbactionsetstate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionsetstate.cpp; sourceTree = "<group>"; };
+		6B277D7719A85CB2001E3321 /* wbactionsetstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionsetstate.h; sourceTree = "<group>"; };
+		6B277D7A19A85CC2001E3321 /* wbpeisstate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeisstate.cpp; sourceTree = "<group>"; };
+		6B277D7B19A85CC2001E3321 /* wbpeisstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeisstate.h; sourceTree = "<group>"; };
+		6B89F5E4220F743000BEEEE7 /* wbpereactionsself.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wbpereactionsself.cpp; path = PEs/wbpereactionsself.cpp; sourceTree = "<group>"; };
+		6B89F5E5220F743000BEEEE7 /* wbpereactionsself.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wbpereactionsself.h; path = PEs/wbpereactionsself.h; sourceTree = "<group>"; };
+		6BD3B6AC1952071B0049D4B7 /* libWorkbench.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWorkbench.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD3B6BB1952072D0049D4B7 /* wbactioncomposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactioncomposite.cpp; sourceTree = "<group>"; };
+		6BD3B6BC1952072D0049D4B7 /* wbactioncomposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactioncomposite.h; sourceTree = "<group>"; };
+		6BD3B6BD1952072D0049D4B7 /* wbactiondestroy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactiondestroy.cpp; sourceTree = "<group>"; };
+		6BD3B6BE1952072D0049D4B7 /* wbactiondestroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactiondestroy.h; sourceTree = "<group>"; };
+		6BD3B6BF1952072D0049D4B7 /* wbactionlog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionlog.cpp; sourceTree = "<group>"; };
+		6BD3B6C01952072D0049D4B7 /* wbactionlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionlog.h; sourceTree = "<group>"; };
+		6BD3B6C11952072D0049D4B7 /* wbactionselector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionselector.cpp; sourceTree = "<group>"; };
+		6BD3B6C21952072D0049D4B7 /* wbactionselector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionselector.h; sourceTree = "<group>"; };
+		6BD3B6C31952072D0049D4B7 /* wbactionsendevent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionsendevent.cpp; sourceTree = "<group>"; };
+		6BD3B6C41952072D0049D4B7 /* wbactionsendevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionsendevent.h; sourceTree = "<group>"; };
+		6BD3B6C51952072D0049D4B7 /* wbactionsetconfigvar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionsetconfigvar.cpp; sourceTree = "<group>"; };
+		6BD3B6C61952072D0049D4B7 /* wbactionsetconfigvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionsetconfigvar.h; sourceTree = "<group>"; };
+		6BD3B6C71952072D0049D4B7 /* wbactionsetvariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionsetvariable.cpp; sourceTree = "<group>"; };
+		6BD3B6C81952072D0049D4B7 /* wbactionsetvariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionsetvariable.h; sourceTree = "<group>"; };
+		6BD3B6C91952072D0049D4B7 /* wbactiontriggerstatmod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactiontriggerstatmod.cpp; sourceTree = "<group>"; };
+		6BD3B6CA1952072D0049D4B7 /* wbactiontriggerstatmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactiontriggerstatmod.h; sourceTree = "<group>"; };
+		6BD3B6CB1952072D0049D4B7 /* wbactionunqueueevent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionunqueueevent.cpp; sourceTree = "<group>"; };
+		6BD3B6CC1952072D0049D4B7 /* wbactionunqueueevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionunqueueevent.h; sourceTree = "<group>"; };
+		6BD3B6CE1952072D0049D4B7 /* wbcomplabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcomplabel.cpp; sourceTree = "<group>"; };
+		6BD3B6CF1952072D0049D4B7 /* wbcomplabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomplabel.h; sourceTree = "<group>"; };
+		6BD3B6D01952072D0049D4B7 /* wbcompowner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcompowner.cpp; sourceTree = "<group>"; };
+		6BD3B6D11952072D0049D4B7 /* wbcompowner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcompowner.h; sourceTree = "<group>"; };
+		6BD3B6D21952072D0049D4B7 /* wbcomppemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcomppemap.cpp; sourceTree = "<group>"; };
+		6BD3B6D31952072D0049D4B7 /* wbcomppemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomppemap.h; sourceTree = "<group>"; };
+		6BD3B6D41952072D0049D4B7 /* wbcompreactions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcompreactions.cpp; sourceTree = "<group>"; };
+		6BD3B6D51952072D0049D4B7 /* wbcompreactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcompreactions.h; sourceTree = "<group>"; };
+		6BD3B6D61952072D0049D4B7 /* wbcompstate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcompstate.cpp; sourceTree = "<group>"; };
+		6BD3B6D71952072D0049D4B7 /* wbcompstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcompstate.h; sourceTree = "<group>"; };
+		6BD3B6D81952072D0049D4B7 /* wbcompstatmod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcompstatmod.cpp; sourceTree = "<group>"; };
+		6BD3B6D91952072D0049D4B7 /* wbcompstatmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcompstatmod.h; sourceTree = "<group>"; };
+		6BD3B6DA1952072D0049D4B7 /* wbcomptransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcomptransform.cpp; sourceTree = "<group>"; };
+		6BD3B6DB1952072D0049D4B7 /* wbcomptransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomptransform.h; sourceTree = "<group>"; };
+		6BD3B6DC1952072D0049D4B7 /* wbcompvariablemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcompvariablemap.cpp; sourceTree = "<group>"; };
+		6BD3B6DD1952072D0049D4B7 /* wbcompvariablemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcompvariablemap.h; sourceTree = "<group>"; };
+		6BD3B6DE1952072D0049D4B7 /* iwbeventobserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwbeventobserver.h; sourceTree = "<group>"; };
+		6BD3B6E01952072D0049D4B7 /* wbpeabs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeabs.cpp; sourceTree = "<group>"; };
+		6BD3B6E11952072D0049D4B7 /* wbpeabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeabs.h; sourceTree = "<group>"; };
+		6BD3B6E21952072D0049D4B7 /* wbpeadd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeadd.cpp; sourceTree = "<group>"; };
+		6BD3B6E31952072D0049D4B7 /* wbpeadd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeadd.h; sourceTree = "<group>"; };
+		6BD3B6E41952072D0049D4B7 /* wbpeand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeand.cpp; sourceTree = "<group>"; };
+		6BD3B6E51952072D0049D4B7 /* wbpeand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeand.h; sourceTree = "<group>"; };
+		6BD3B6E61952072D0049D4B7 /* wbpebinaryop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpebinaryop.cpp; sourceTree = "<group>"; };
+		6BD3B6E71952072D0049D4B7 /* wbpebinaryop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpebinaryop.h; sourceTree = "<group>"; };
+		6BD3B6E81952072D0049D4B7 /* wbpeconditional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconditional.cpp; sourceTree = "<group>"; };
+		6BD3B6E91952072D0049D4B7 /* wbpeconditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconditional.h; sourceTree = "<group>"; };
+		6BD3B6EA1952072D0049D4B7 /* wbpeconstantbool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantbool.cpp; sourceTree = "<group>"; };
+		6BD3B6EB1952072D0049D4B7 /* wbpeconstantbool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantbool.h; sourceTree = "<group>"; };
+		6BD3B6EC1952072D0049D4B7 /* wbpeconstantfloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantfloat.cpp; sourceTree = "<group>"; };
+		6BD3B6ED1952072D0049D4B7 /* wbpeconstantfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantfloat.h; sourceTree = "<group>"; };
+		6BD3B6EE1952072D0049D4B7 /* wbpeconstantint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantint.cpp; sourceTree = "<group>"; };
+		6BD3B6EF1952072D0049D4B7 /* wbpeconstantint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantint.h; sourceTree = "<group>"; };
+		6BD3B6F01952072D0049D4B7 /* wbpeconstantstring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantstring.cpp; sourceTree = "<group>"; };
+		6BD3B6F11952072D0049D4B7 /* wbpeconstantstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantstring.h; sourceTree = "<group>"; };
+		6BD3B6F21952072D0049D4B7 /* wbpeconstantvector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeconstantvector.cpp; sourceTree = "<group>"; };
+		6BD3B6F31952072D0049D4B7 /* wbpeconstantvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeconstantvector.h; sourceTree = "<group>"; };
+		6BD3B6F41952072D0049D4B7 /* wbpecross.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpecross.cpp; sourceTree = "<group>"; };
+		6BD3B6F51952072D0049D4B7 /* wbpecross.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpecross.h; sourceTree = "<group>"; };
+		6BD3B6F61952072D0049D4B7 /* wbpediv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpediv.cpp; sourceTree = "<group>"; };
+		6BD3B6F71952072D0049D4B7 /* wbpediv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpediv.h; sourceTree = "<group>"; };
+		6BD3B6F81952072D0049D4B7 /* wbpedot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpedot.cpp; sourceTree = "<group>"; };
+		6BD3B6F91952072D0049D4B7 /* wbpedot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpedot.h; sourceTree = "<group>"; };
+		6BD3B6FA1952072D0049D4B7 /* wbpegetentitybylabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpegetentitybylabel.cpp; sourceTree = "<group>"; };
+		6BD3B6FB1952072D0049D4B7 /* wbpegetentitybylabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpegetentitybylabel.h; sourceTree = "<group>"; };
+		6BD3B6FC1952072D0049D4B7 /* wbpegetname.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpegetname.cpp; sourceTree = "<group>"; };
+		6BD3B6FD1952072D0049D4B7 /* wbpegetname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpegetname.h; sourceTree = "<group>"; };
+		6BD3B6FE1952072D0049D4B7 /* wbpegetstate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpegetstate.cpp; sourceTree = "<group>"; };
+		6BD3B6FF1952072D0049D4B7 /* wbpegetstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpegetstate.h; sourceTree = "<group>"; };
+		6BD3B7001952072D0049D4B7 /* wbpegetvariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpegetvariable.cpp; sourceTree = "<group>"; };
+		6BD3B7011952072D0049D4B7 /* wbpegetvariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpegetvariable.h; sourceTree = "<group>"; };
+		6BD3B7021952072D0049D4B7 /* wbpelength.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpelength.cpp; sourceTree = "<group>"; };
+		6BD3B7031952072D0049D4B7 /* wbpelength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpelength.h; sourceTree = "<group>"; };
+		6BD3B7041952072D0049D4B7 /* wbpelookup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpelookup.cpp; sourceTree = "<group>"; };
+		6BD3B7051952072D0049D4B7 /* wbpelookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpelookup.h; sourceTree = "<group>"; };
+		6BD3B7061952072D0049D4B7 /* wbpemax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpemax.cpp; sourceTree = "<group>"; };
+		6BD3B7071952072D0049D4B7 /* wbpemax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpemax.h; sourceTree = "<group>"; };
+		6BD3B7081952072D0049D4B7 /* wbpemin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpemin.cpp; sourceTree = "<group>"; };
+		6BD3B7091952072D0049D4B7 /* wbpemin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpemin.h; sourceTree = "<group>"; };
+		6BD3B70A1952072D0049D4B7 /* wbpemul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpemul.cpp; sourceTree = "<group>"; };
+		6BD3B70B1952072D0049D4B7 /* wbpemul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpemul.h; sourceTree = "<group>"; };
+		6BD3B70C1952072D0049D4B7 /* wbpenormal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpenormal.cpp; sourceTree = "<group>"; };
+		6BD3B70D1952072D0049D4B7 /* wbpenormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpenormal.h; sourceTree = "<group>"; };
+		6BD3B70E1952072D0049D4B7 /* wbpenot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpenot.cpp; sourceTree = "<group>"; };
+		6BD3B70F1952072D0049D4B7 /* wbpenot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpenot.h; sourceTree = "<group>"; };
+		6BD3B7101952072D0049D4B7 /* wbpenull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpenull.cpp; sourceTree = "<group>"; };
+		6BD3B7111952072D0049D4B7 /* wbpenull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpenull.h; sourceTree = "<group>"; };
+		6BD3B7121952072D0049D4B7 /* wbpeor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeor.cpp; sourceTree = "<group>"; };
+		6BD3B7131952072D0049D4B7 /* wbpeor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeor.h; sourceTree = "<group>"; };
+		6BD3B7141952072D0049D4B7 /* wbpeowner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeowner.cpp; sourceTree = "<group>"; };
+		6BD3B7151952072D0049D4B7 /* wbpeowner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeowner.h; sourceTree = "<group>"; };
+		6BD3B7161952072D0049D4B7 /* wbpepow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpepow.cpp; sourceTree = "<group>"; };
+		6BD3B7171952072D0049D4B7 /* wbpepow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpepow.h; sourceTree = "<group>"; };
+		6BD3B7181952072D0049D4B7 /* wbpepushcontext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpepushcontext.cpp; sourceTree = "<group>"; };
+		6BD3B7191952072D0049D4B7 /* wbpepushcontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpepushcontext.h; sourceTree = "<group>"; };
+		6BD3B71A1952072D0049D4B7 /* wbpequeryactionstack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpequeryactionstack.cpp; sourceTree = "<group>"; };
+		6BD3B71B1952072D0049D4B7 /* wbpequeryactionstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpequeryactionstack.h; sourceTree = "<group>"; };
+		6BD3B71C1952072D0049D4B7 /* wbperandombool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbperandombool.cpp; sourceTree = "<group>"; };
+		6BD3B71D1952072D0049D4B7 /* wbperandombool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbperandombool.h; sourceTree = "<group>"; };
+		6BD3B71E1952072D0049D4B7 /* wbperandomfloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbperandomfloat.cpp; sourceTree = "<group>"; };
+		6BD3B71F1952072D0049D4B7 /* wbperandomfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbperandomfloat.h; sourceTree = "<group>"; };
+		6BD3B7201952072D0049D4B7 /* wbperandomint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbperandomint.cpp; sourceTree = "<group>"; };
+		6BD3B7211952072D0049D4B7 /* wbperandomint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbperandomint.h; sourceTree = "<group>"; };
+		6BD3B7221952072D0049D4B7 /* wbperandomvector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbperandomvector.cpp; sourceTree = "<group>"; };
+		6BD3B7231952072D0049D4B7 /* wbperandomvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbperandomvector.h; sourceTree = "<group>"; };
+		6BD3B7241952072D0049D4B7 /* wbpesaturate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpesaturate.cpp; sourceTree = "<group>"; };
+		6BD3B7251952072D0049D4B7 /* wbpesaturate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpesaturate.h; sourceTree = "<group>"; };
+		6BD3B7261952072D0049D4B7 /* wbpeselector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeselector.cpp; sourceTree = "<group>"; };
+		6BD3B7271952072D0049D4B7 /* wbpeselector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeselector.h; sourceTree = "<group>"; };
+		6BD3B7281952072D0049D4B7 /* wbpeself.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeself.cpp; sourceTree = "<group>"; };
+		6BD3B7291952072D0049D4B7 /* wbpeself.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeself.h; sourceTree = "<group>"; };
+		6BD3B72A1952072D0049D4B7 /* wbpesquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpesquare.cpp; sourceTree = "<group>"; };
+		6BD3B72B1952072D0049D4B7 /* wbpesquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpesquare.h; sourceTree = "<group>"; };
+		6BD3B72C1952072D0049D4B7 /* wbpestatmod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpestatmod.cpp; sourceTree = "<group>"; };
+		6BD3B72D1952072D0049D4B7 /* wbpestatmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpestatmod.h; sourceTree = "<group>"; };
+		6BD3B72E1952072D0049D4B7 /* wbpesub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpesub.cpp; sourceTree = "<group>"; };
+		6BD3B72F1952072D0049D4B7 /* wbpesub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpesub.h; sourceTree = "<group>"; };
+		6BD3B7301952072D0049D4B7 /* wbpeunaryop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpeunaryop.cpp; sourceTree = "<group>"; };
+		6BD3B7311952072D0049D4B7 /* wbpeunaryop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpeunaryop.h; sourceTree = "<group>"; };
+		6BD3B7321952072D0049D4B7 /* wbpexor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpexor.cpp; sourceTree = "<group>"; };
+		6BD3B7331952072D0049D4B7 /* wbpexor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpexor.h; sourceTree = "<group>"; };
+		6BD3B7341952072D0049D4B7 /* wbaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbaction.cpp; sourceTree = "<group>"; };
+		6BD3B7351952072D0049D4B7 /* wbaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbaction.h; sourceTree = "<group>"; };
+		6BD3B7361952072D0049D4B7 /* wbactionfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionfactory.cpp; sourceTree = "<group>"; };
+		6BD3B7371952072D0049D4B7 /* wbactionfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionfactory.h; sourceTree = "<group>"; };
+		6BD3B7381952072D0049D4B7 /* wbactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactions.h; sourceTree = "<group>"; };
+		6BD3B7391952072D0049D4B7 /* wbactionstack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbactionstack.cpp; sourceTree = "<group>"; };
+		6BD3B73A1952072D0049D4B7 /* wbactionstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbactionstack.h; sourceTree = "<group>"; };
+		6BD3B73B1952072D0049D4B7 /* wbcomponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcomponent.cpp; sourceTree = "<group>"; };
+		6BD3B73C1952072D0049D4B7 /* wbcomponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomponent.h; sourceTree = "<group>"; };
+		6BD3B73D1952072D0049D4B7 /* wbcomponentarrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbcomponentarrays.cpp; sourceTree = "<group>"; };
+		6BD3B73E1952072D0049D4B7 /* wbcomponentarrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomponentarrays.h; sourceTree = "<group>"; };
+		6BD3B73F1952072D0049D4B7 /* wbcomponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbcomponents.h; sourceTree = "<group>"; };
+		6BD3B7401952072D0049D4B7 /* wbentity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbentity.cpp; sourceTree = "<group>"; };
+		6BD3B7411952072D0049D4B7 /* wbentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbentity.h; sourceTree = "<group>"; };
+		6BD3B7421952072D0049D4B7 /* wbentityref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbentityref.h; sourceTree = "<group>"; };
+		6BD3B7431952072D0049D4B7 /* wbevent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbevent.cpp; sourceTree = "<group>"; };
+		6BD3B7441952072D0049D4B7 /* wbevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbevent.h; sourceTree = "<group>"; };
+		6BD3B7451952072D0049D4B7 /* wbeventmanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbeventmanager.cpp; sourceTree = "<group>"; };
+		6BD3B7461952072D0049D4B7 /* wbeventmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbeventmanager.h; sourceTree = "<group>"; };
+		6BD3B7471952072D0049D4B7 /* wbparamevaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbparamevaluator.cpp; sourceTree = "<group>"; };
+		6BD3B7481952072D0049D4B7 /* wbparamevaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbparamevaluator.h; sourceTree = "<group>"; };
+		6BD3B7491952072D0049D4B7 /* wbparamevaluatorfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbparamevaluatorfactory.cpp; sourceTree = "<group>"; };
+		6BD3B74A1952072D0049D4B7 /* wbparamevaluatorfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbparamevaluatorfactory.h; sourceTree = "<group>"; };
+		6BD3B74B1952072D0049D4B7 /* wbpatternmatching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpatternmatching.cpp; sourceTree = "<group>"; };
+		6BD3B74C1952072D0049D4B7 /* wbpatternmatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpatternmatching.h; sourceTree = "<group>"; };
+		6BD3B74D1952072D0049D4B7 /* wbpe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbpe.cpp; sourceTree = "<group>"; };
+		6BD3B74E1952072D0049D4B7 /* wbpe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpe.h; sourceTree = "<group>"; };
+		6BD3B74F1952072D0049D4B7 /* wbpes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbpes.h; sourceTree = "<group>"; };
+		6BD3B7501952072D0049D4B7 /* wbrule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbrule.cpp; sourceTree = "<group>"; };
+		6BD3B7511952072D0049D4B7 /* wbrule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbrule.h; sourceTree = "<group>"; };
+		6BD3B7521952072D0049D4B7 /* wbscene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbscene.cpp; sourceTree = "<group>"; };
+		6BD3B7531952072D0049D4B7 /* wbscene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbscene.h; sourceTree = "<group>"; };
+		6BD3B7541952072D0049D4B7 /* wbworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wbworld.cpp; sourceTree = "<group>"; };
+		6BD3B7551952072D0049D4B7 /* wbworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbworld.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BD3B6A91952071B0049D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD3B6A11952071B0049D4B7 = {
+			isa = PBXGroup;
+			children = (
+				6BD3B6B91952072D0049D4B7 /* src */,
+				6BD3B6AD1952071B0049D4B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BD3B6AD1952071B0049D4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BD3B6AC1952071B0049D4B7 /* libWorkbench.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BD3B6B91952072D0049D4B7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6B89F5E4220F743000BEEEE7 /* wbpereactionsself.cpp */,
+				6B89F5E5220F743000BEEEE7 /* wbpereactionsself.h */,
+				6BD3B6BA1952072D0049D4B7 /* Actions */,
+				6BD3B6CD1952072D0049D4B7 /* Components */,
+				6BD3B6DE1952072D0049D4B7 /* iwbeventobserver.h */,
+				6BD3B6DF1952072D0049D4B7 /* PEs */,
+				6BD3B7341952072D0049D4B7 /* wbaction.cpp */,
+				6BD3B7351952072D0049D4B7 /* wbaction.h */,
+				6BD3B7361952072D0049D4B7 /* wbactionfactory.cpp */,
+				6BD3B7371952072D0049D4B7 /* wbactionfactory.h */,
+				6BD3B7381952072D0049D4B7 /* wbactions.h */,
+				6BD3B7391952072D0049D4B7 /* wbactionstack.cpp */,
+				6BD3B73A1952072D0049D4B7 /* wbactionstack.h */,
+				6BD3B73B1952072D0049D4B7 /* wbcomponent.cpp */,
+				6BD3B73C1952072D0049D4B7 /* wbcomponent.h */,
+				6BD3B73D1952072D0049D4B7 /* wbcomponentarrays.cpp */,
+				6BD3B73E1952072D0049D4B7 /* wbcomponentarrays.h */,
+				6BD3B73F1952072D0049D4B7 /* wbcomponents.h */,
+				6BD3B7401952072D0049D4B7 /* wbentity.cpp */,
+				6BD3B7411952072D0049D4B7 /* wbentity.h */,
+				6BD3B7421952072D0049D4B7 /* wbentityref.h */,
+				6BD3B7431952072D0049D4B7 /* wbevent.cpp */,
+				6BD3B7441952072D0049D4B7 /* wbevent.h */,
+				6BD3B7451952072D0049D4B7 /* wbeventmanager.cpp */,
+				6BD3B7461952072D0049D4B7 /* wbeventmanager.h */,
+				6BD3B7471952072D0049D4B7 /* wbparamevaluator.cpp */,
+				6BD3B7481952072D0049D4B7 /* wbparamevaluator.h */,
+				6BD3B7491952072D0049D4B7 /* wbparamevaluatorfactory.cpp */,
+				6BD3B74A1952072D0049D4B7 /* wbparamevaluatorfactory.h */,
+				6BD3B74B1952072D0049D4B7 /* wbpatternmatching.cpp */,
+				6BD3B74C1952072D0049D4B7 /* wbpatternmatching.h */,
+				6BD3B74D1952072D0049D4B7 /* wbpe.cpp */,
+				6BD3B74E1952072D0049D4B7 /* wbpe.h */,
+				6BD3B74F1952072D0049D4B7 /* wbpes.h */,
+				6BD3B7501952072D0049D4B7 /* wbrule.cpp */,
+				6BD3B7511952072D0049D4B7 /* wbrule.h */,
+				6BD3B7521952072D0049D4B7 /* wbscene.cpp */,
+				6BD3B7531952072D0049D4B7 /* wbscene.h */,
+				6BD3B7541952072D0049D4B7 /* wbworld.cpp */,
+				6BD3B7551952072D0049D4B7 /* wbworld.h */,
+			);
+			name = src;
+			path = ../../Libraries/Workbench/src;
+			sourceTree = "<group>";
+		};
+		6BD3B6BA1952072D0049D4B7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				6B277D7619A85CB2001E3321 /* wbactionsetstate.cpp */,
+				6B277D7719A85CB2001E3321 /* wbactionsetstate.h */,
+				6BD3B6BB1952072D0049D4B7 /* wbactioncomposite.cpp */,
+				6BD3B6BC1952072D0049D4B7 /* wbactioncomposite.h */,
+				6BD3B6BD1952072D0049D4B7 /* wbactiondestroy.cpp */,
+				6BD3B6BE1952072D0049D4B7 /* wbactiondestroy.h */,
+				6BD3B6BF1952072D0049D4B7 /* wbactionlog.cpp */,
+				6BD3B6C01952072D0049D4B7 /* wbactionlog.h */,
+				6BD3B6C11952072D0049D4B7 /* wbactionselector.cpp */,
+				6BD3B6C21952072D0049D4B7 /* wbactionselector.h */,
+				6BD3B6C31952072D0049D4B7 /* wbactionsendevent.cpp */,
+				6BD3B6C41952072D0049D4B7 /* wbactionsendevent.h */,
+				6BD3B6C51952072D0049D4B7 /* wbactionsetconfigvar.cpp */,
+				6BD3B6C61952072D0049D4B7 /* wbactionsetconfigvar.h */,
+				6BD3B6C71952072D0049D4B7 /* wbactionsetvariable.cpp */,
+				6BD3B6C81952072D0049D4B7 /* wbactionsetvariable.h */,
+				6BD3B6C91952072D0049D4B7 /* wbactiontriggerstatmod.cpp */,
+				6BD3B6CA1952072D0049D4B7 /* wbactiontriggerstatmod.h */,
+				6BD3B6CB1952072D0049D4B7 /* wbactionunqueueevent.cpp */,
+				6BD3B6CC1952072D0049D4B7 /* wbactionunqueueevent.h */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		6BD3B6CD1952072D0049D4B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6BD3B6CE1952072D0049D4B7 /* wbcomplabel.cpp */,
+				6BD3B6CF1952072D0049D4B7 /* wbcomplabel.h */,
+				6BD3B6D01952072D0049D4B7 /* wbcompowner.cpp */,
+				6BD3B6D11952072D0049D4B7 /* wbcompowner.h */,
+				6BD3B6D21952072D0049D4B7 /* wbcomppemap.cpp */,
+				6BD3B6D31952072D0049D4B7 /* wbcomppemap.h */,
+				6BD3B6D41952072D0049D4B7 /* wbcompreactions.cpp */,
+				6BD3B6D51952072D0049D4B7 /* wbcompreactions.h */,
+				6BD3B6D61952072D0049D4B7 /* wbcompstate.cpp */,
+				6BD3B6D71952072D0049D4B7 /* wbcompstate.h */,
+				6BD3B6D81952072D0049D4B7 /* wbcompstatmod.cpp */,
+				6BD3B6D91952072D0049D4B7 /* wbcompstatmod.h */,
+				6BD3B6DA1952072D0049D4B7 /* wbcomptransform.cpp */,
+				6BD3B6DB1952072D0049D4B7 /* wbcomptransform.h */,
+				6BD3B6DC1952072D0049D4B7 /* wbcompvariablemap.cpp */,
+				6BD3B6DD1952072D0049D4B7 /* wbcompvariablemap.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6BD3B6DF1952072D0049D4B7 /* PEs */ = {
+			isa = PBXGroup;
+			children = (
+				6B0E85831CAEEDB000521B86 /* wbpeneg.cpp */,
+				6B0E85841CAEEDB000521B86 /* wbpeneg.h */,
+				6B0E85811CAEEDB000521B86 /* wbpeconstantangles.cpp */,
+				6B0E85821CAEEDB000521B86 /* wbpeconstantangles.h */,
+				6B0E82701C2354DB00521B86 /* wbpegetconfigvar.cpp */,
+				6B0E82711C2354DB00521B86 /* wbpegetconfigvar.h */,
+				6B277D7A19A85CC2001E3321 /* wbpeisstate.cpp */,
+				6B277D7B19A85CC2001E3321 /* wbpeisstate.h */,
+				6BD3B6E01952072D0049D4B7 /* wbpeabs.cpp */,
+				6BD3B6E11952072D0049D4B7 /* wbpeabs.h */,
+				6BD3B6E21952072D0049D4B7 /* wbpeadd.cpp */,
+				6BD3B6E31952072D0049D4B7 /* wbpeadd.h */,
+				6BD3B6E41952072D0049D4B7 /* wbpeand.cpp */,
+				6BD3B6E51952072D0049D4B7 /* wbpeand.h */,
+				6BD3B6E61952072D0049D4B7 /* wbpebinaryop.cpp */,
+				6BD3B6E71952072D0049D4B7 /* wbpebinaryop.h */,
+				6BD3B6E81952072D0049D4B7 /* wbpeconditional.cpp */,
+				6BD3B6E91952072D0049D4B7 /* wbpeconditional.h */,
+				6BD3B6EA1952072D0049D4B7 /* wbpeconstantbool.cpp */,
+				6BD3B6EB1952072D0049D4B7 /* wbpeconstantbool.h */,
+				6BD3B6EC1952072D0049D4B7 /* wbpeconstantfloat.cpp */,
+				6BD3B6ED1952072D0049D4B7 /* wbpeconstantfloat.h */,
+				6BD3B6EE1952072D0049D4B7 /* wbpeconstantint.cpp */,
+				6BD3B6EF1952072D0049D4B7 /* wbpeconstantint.h */,
+				6BD3B6F01952072D0049D4B7 /* wbpeconstantstring.cpp */,
+				6BD3B6F11952072D0049D4B7 /* wbpeconstantstring.h */,
+				6BD3B6F21952072D0049D4B7 /* wbpeconstantvector.cpp */,
+				6BD3B6F31952072D0049D4B7 /* wbpeconstantvector.h */,
+				6BD3B6F41952072D0049D4B7 /* wbpecross.cpp */,
+				6BD3B6F51952072D0049D4B7 /* wbpecross.h */,
+				6BD3B6F61952072D0049D4B7 /* wbpediv.cpp */,
+				6BD3B6F71952072D0049D4B7 /* wbpediv.h */,
+				6BD3B6F81952072D0049D4B7 /* wbpedot.cpp */,
+				6BD3B6F91952072D0049D4B7 /* wbpedot.h */,
+				6BD3B6FA1952072D0049D4B7 /* wbpegetentitybylabel.cpp */,
+				6BD3B6FB1952072D0049D4B7 /* wbpegetentitybylabel.h */,
+				6BD3B6FC1952072D0049D4B7 /* wbpegetname.cpp */,
+				6BD3B6FD1952072D0049D4B7 /* wbpegetname.h */,
+				6BD3B6FE1952072D0049D4B7 /* wbpegetstate.cpp */,
+				6BD3B6FF1952072D0049D4B7 /* wbpegetstate.h */,
+				6BD3B7001952072D0049D4B7 /* wbpegetvariable.cpp */,
+				6BD3B7011952072D0049D4B7 /* wbpegetvariable.h */,
+				6BD3B7021952072D0049D4B7 /* wbpelength.cpp */,
+				6BD3B7031952072D0049D4B7 /* wbpelength.h */,
+				6BD3B7041952072D0049D4B7 /* wbpelookup.cpp */,
+				6BD3B7051952072D0049D4B7 /* wbpelookup.h */,
+				6BD3B7061952072D0049D4B7 /* wbpemax.cpp */,
+				6BD3B7071952072D0049D4B7 /* wbpemax.h */,
+				6BD3B7081952072D0049D4B7 /* wbpemin.cpp */,
+				6BD3B7091952072D0049D4B7 /* wbpemin.h */,
+				6BD3B70A1952072D0049D4B7 /* wbpemul.cpp */,
+				6BD3B70B1952072D0049D4B7 /* wbpemul.h */,
+				6BD3B70C1952072D0049D4B7 /* wbpenormal.cpp */,
+				6BD3B70D1952072D0049D4B7 /* wbpenormal.h */,
+				6BD3B70E1952072D0049D4B7 /* wbpenot.cpp */,
+				6BD3B70F1952072D0049D4B7 /* wbpenot.h */,
+				6BD3B7101952072D0049D4B7 /* wbpenull.cpp */,
+				6BD3B7111952072D0049D4B7 /* wbpenull.h */,
+				6BD3B7121952072D0049D4B7 /* wbpeor.cpp */,
+				6BD3B7131952072D0049D4B7 /* wbpeor.h */,
+				6BD3B7141952072D0049D4B7 /* wbpeowner.cpp */,
+				6BD3B7151952072D0049D4B7 /* wbpeowner.h */,
+				6BD3B7161952072D0049D4B7 /* wbpepow.cpp */,
+				6BD3B7171952072D0049D4B7 /* wbpepow.h */,
+				6BD3B7181952072D0049D4B7 /* wbpepushcontext.cpp */,
+				6BD3B7191952072D0049D4B7 /* wbpepushcontext.h */,
+				6BD3B71A1952072D0049D4B7 /* wbpequeryactionstack.cpp */,
+				6BD3B71B1952072D0049D4B7 /* wbpequeryactionstack.h */,
+				6BD3B71C1952072D0049D4B7 /* wbperandombool.cpp */,
+				6BD3B71D1952072D0049D4B7 /* wbperandombool.h */,
+				6BD3B71E1952072D0049D4B7 /* wbperandomfloat.cpp */,
+				6BD3B71F1952072D0049D4B7 /* wbperandomfloat.h */,
+				6BD3B7201952072D0049D4B7 /* wbperandomint.cpp */,
+				6BD3B7211952072D0049D4B7 /* wbperandomint.h */,
+				6BD3B7221952072D0049D4B7 /* wbperandomvector.cpp */,
+				6BD3B7231952072D0049D4B7 /* wbperandomvector.h */,
+				6BD3B7241952072D0049D4B7 /* wbpesaturate.cpp */,
+				6BD3B7251952072D0049D4B7 /* wbpesaturate.h */,
+				6BD3B7261952072D0049D4B7 /* wbpeselector.cpp */,
+				6BD3B7271952072D0049D4B7 /* wbpeselector.h */,
+				6BD3B7281952072D0049D4B7 /* wbpeself.cpp */,
+				6BD3B7291952072D0049D4B7 /* wbpeself.h */,
+				6BD3B72A1952072D0049D4B7 /* wbpesquare.cpp */,
+				6BD3B72B1952072D0049D4B7 /* wbpesquare.h */,
+				6BD3B72C1952072D0049D4B7 /* wbpestatmod.cpp */,
+				6BD3B72D1952072D0049D4B7 /* wbpestatmod.h */,
+				6BD3B72E1952072D0049D4B7 /* wbpesub.cpp */,
+				6BD3B72F1952072D0049D4B7 /* wbpesub.h */,
+				6BD3B7301952072D0049D4B7 /* wbpeunaryop.cpp */,
+				6BD3B7311952072D0049D4B7 /* wbpeunaryop.h */,
+				6BD3B7321952072D0049D4B7 /* wbpexor.cpp */,
+				6BD3B7331952072D0049D4B7 /* wbpexor.h */,
+			);
+			path = PEs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BD3B6AA1952071B0049D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B7571952072D0049D4B7 /* wbactioncomposite.h in Headers */,
+				6BD3B7591952072D0049D4B7 /* wbactiondestroy.h in Headers */,
+				6BD3B75B1952072D0049D4B7 /* wbactionlog.h in Headers */,
+				6BD3B75D1952072D0049D4B7 /* wbactionselector.h in Headers */,
+				6BD3B75F1952072D0049D4B7 /* wbactionsendevent.h in Headers */,
+				6BD3B7611952072D0049D4B7 /* wbactionsetconfigvar.h in Headers */,
+				6BD3B7631952072D0049D4B7 /* wbactionsetvariable.h in Headers */,
+				6BD3B7651952072D0049D4B7 /* wbactiontriggerstatmod.h in Headers */,
+				6BD3B7671952072D0049D4B7 /* wbactionunqueueevent.h in Headers */,
+				6BD3B7691952072D0049D4B7 /* wbcomplabel.h in Headers */,
+				6BD3B76B1952072D0049D4B7 /* wbcompowner.h in Headers */,
+				6BD3B76D1952072D0049D4B7 /* wbcomppemap.h in Headers */,
+				6BD3B76F1952072D0049D4B7 /* wbcompreactions.h in Headers */,
+				6BD3B7711952072D0049D4B7 /* wbcompstate.h in Headers */,
+				6BD3B7731952072D0049D4B7 /* wbcompstatmod.h in Headers */,
+				6BD3B7751952072D0049D4B7 /* wbcomptransform.h in Headers */,
+				6BD3B7771952072D0049D4B7 /* wbcompvariablemap.h in Headers */,
+				6BD3B7781952072D0049D4B7 /* iwbeventobserver.h in Headers */,
+				6BD3B77A1952072D0049D4B7 /* wbpeabs.h in Headers */,
+				6BD3B77C1952072D0049D4B7 /* wbpeadd.h in Headers */,
+				6BD3B77E1952072D0049D4B7 /* wbpeand.h in Headers */,
+				6BD3B7801952072D0049D4B7 /* wbpebinaryop.h in Headers */,
+				6BD3B7821952072D0049D4B7 /* wbpeconditional.h in Headers */,
+				6B89F5E7220F743000BEEEE7 /* wbpereactionsself.h in Headers */,
+				6BD3B7841952072D0049D4B7 /* wbpeconstantbool.h in Headers */,
+				6BD3B7861952072D0049D4B7 /* wbpeconstantfloat.h in Headers */,
+				6BD3B7881952072D0049D4B7 /* wbpeconstantint.h in Headers */,
+				6BD3B78A1952072D0049D4B7 /* wbpeconstantstring.h in Headers */,
+				6BD3B78C1952072D0049D4B7 /* wbpeconstantvector.h in Headers */,
+				6BD3B78E1952072D0049D4B7 /* wbpecross.h in Headers */,
+				6BD3B7901952072D0049D4B7 /* wbpediv.h in Headers */,
+				6BD3B7921952072D0049D4B7 /* wbpedot.h in Headers */,
+				6BD3B7941952072D0049D4B7 /* wbpegetentitybylabel.h in Headers */,
+				6BD3B7961952072D0049D4B7 /* wbpegetname.h in Headers */,
+				6BD3B7981952072D0049D4B7 /* wbpegetstate.h in Headers */,
+				6BD3B79A1952072D0049D4B7 /* wbpegetvariable.h in Headers */,
+				6BD3B79C1952072D0049D4B7 /* wbpelength.h in Headers */,
+				6BD3B79E1952072D0049D4B7 /* wbpelookup.h in Headers */,
+				6BD3B7A01952072D0049D4B7 /* wbpemax.h in Headers */,
+				6BD3B7A21952072D0049D4B7 /* wbpemin.h in Headers */,
+				6BD3B7A41952072D0049D4B7 /* wbpemul.h in Headers */,
+				6BD3B7A61952072D0049D4B7 /* wbpenormal.h in Headers */,
+				6BD3B7A81952072D0049D4B7 /* wbpenot.h in Headers */,
+				6BD3B7AA1952072D0049D4B7 /* wbpenull.h in Headers */,
+				6BD3B7AC1952072D0049D4B7 /* wbpeor.h in Headers */,
+				6BD3B7AE1952072D0049D4B7 /* wbpeowner.h in Headers */,
+				6BD3B7B01952072D0049D4B7 /* wbpepow.h in Headers */,
+				6BD3B7B21952072D0049D4B7 /* wbpepushcontext.h in Headers */,
+				6BD3B7B41952072D0049D4B7 /* wbpequeryactionstack.h in Headers */,
+				6BD3B7B61952072D0049D4B7 /* wbperandombool.h in Headers */,
+				6BD3B7B81952072D0049D4B7 /* wbperandomfloat.h in Headers */,
+				6BD3B7BA1952072D0049D4B7 /* wbperandomint.h in Headers */,
+				6BD3B7BC1952072D0049D4B7 /* wbperandomvector.h in Headers */,
+				6BD3B7BE1952072D0049D4B7 /* wbpesaturate.h in Headers */,
+				6BD3B7C01952072D0049D4B7 /* wbpeselector.h in Headers */,
+				6BD3B7C21952072D0049D4B7 /* wbpeself.h in Headers */,
+				6BD3B7C41952072D0049D4B7 /* wbpesquare.h in Headers */,
+				6BD3B7C61952072D0049D4B7 /* wbpestatmod.h in Headers */,
+				6BD3B7C81952072D0049D4B7 /* wbpesub.h in Headers */,
+				6BD3B7CA1952072D0049D4B7 /* wbpeunaryop.h in Headers */,
+				6BD3B7CC1952072D0049D4B7 /* wbpexor.h in Headers */,
+				6BD3B7CE1952072D0049D4B7 /* wbaction.h in Headers */,
+				6BD3B7D01952072D0049D4B7 /* wbactionfactory.h in Headers */,
+				6BD3B7D11952072D0049D4B7 /* wbactions.h in Headers */,
+				6BD3B7D31952072D0049D4B7 /* wbactionstack.h in Headers */,
+				6BD3B7D51952072D0049D4B7 /* wbcomponent.h in Headers */,
+				6BD3B7D71952072D0049D4B7 /* wbcomponentarrays.h in Headers */,
+				6BD3B7D81952072D0049D4B7 /* wbcomponents.h in Headers */,
+				6BD3B7DA1952072D0049D4B7 /* wbentity.h in Headers */,
+				6BD3B7DB1952072D0049D4B7 /* wbentityref.h in Headers */,
+				6BD3B7DD1952072D0049D4B7 /* wbevent.h in Headers */,
+				6BD3B7DF1952072D0049D4B7 /* wbeventmanager.h in Headers */,
+				6BD3B7E11952072D0049D4B7 /* wbparamevaluator.h in Headers */,
+				6BD3B7E31952072D0049D4B7 /* wbparamevaluatorfactory.h in Headers */,
+				6BD3B7E51952072D0049D4B7 /* wbpatternmatching.h in Headers */,
+				6BD3B7E71952072D0049D4B7 /* wbpe.h in Headers */,
+				6BD3B7E81952072D0049D4B7 /* wbpes.h in Headers */,
+				6BD3B7EA1952072D0049D4B7 /* wbrule.h in Headers */,
+				6BD3B7EC1952072D0049D4B7 /* wbscene.h in Headers */,
+				6BD3B7EE1952072D0049D4B7 /* wbworld.h in Headers */,
+				6B277D7919A85CB2001E3321 /* wbactionsetstate.h in Headers */,
+				6B277D7D19A85CC2001E3321 /* wbpeisstate.h in Headers */,
+				6B0E82731C2354DB00521B86 /* wbpegetconfigvar.h in Headers */,
+				6B0E85861CAEEDB000521B86 /* wbpeconstantangles.h in Headers */,
+				6B0E85881CAEEDB000521B86 /* wbpeneg.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BD3B6AB1952071B0049D4B7 /* Workbench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD3B6B01952071B0049D4B7 /* Build configuration list for PBXNativeTarget "Workbench" */;
+			buildPhases = (
+				6BD3B6A81952071B0049D4B7 /* Sources */,
+				6BD3B6A91952071B0049D4B7 /* Frameworks */,
+				6BD3B6AA1952071B0049D4B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Workbench;
+			productName = Workbench;
+			productReference = 6BD3B6AC1952071B0049D4B7 /* libWorkbench.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BD3B6A31952071B0049D4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 6BD3B6A61952071B0049D4B7 /* Build configuration list for PBXProject "Workbench" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BD3B6A11952071B0049D4B7;
+			productRefGroup = 6BD3B6AD1952071B0049D4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD3B6AB1952071B0049D4B7 /* Workbench */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD3B6A81952071B0049D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B7561952072D0049D4B7 /* wbactioncomposite.cpp in Sources */,
+				6BD3B7581952072D0049D4B7 /* wbactiondestroy.cpp in Sources */,
+				6BD3B75A1952072D0049D4B7 /* wbactionlog.cpp in Sources */,
+				6BD3B75C1952072D0049D4B7 /* wbactionselector.cpp in Sources */,
+				6BD3B75E1952072D0049D4B7 /* wbactionsendevent.cpp in Sources */,
+				6BD3B7601952072D0049D4B7 /* wbactionsetconfigvar.cpp in Sources */,
+				6BD3B7621952072D0049D4B7 /* wbactionsetvariable.cpp in Sources */,
+				6BD3B7641952072D0049D4B7 /* wbactiontriggerstatmod.cpp in Sources */,
+				6BD3B7661952072D0049D4B7 /* wbactionunqueueevent.cpp in Sources */,
+				6BD3B7681952072D0049D4B7 /* wbcomplabel.cpp in Sources */,
+				6BD3B76A1952072D0049D4B7 /* wbcompowner.cpp in Sources */,
+				6BD3B76C1952072D0049D4B7 /* wbcomppemap.cpp in Sources */,
+				6BD3B76E1952072D0049D4B7 /* wbcompreactions.cpp in Sources */,
+				6BD3B7701952072D0049D4B7 /* wbcompstate.cpp in Sources */,
+				6BD3B7721952072D0049D4B7 /* wbcompstatmod.cpp in Sources */,
+				6BD3B7741952072D0049D4B7 /* wbcomptransform.cpp in Sources */,
+				6BD3B7761952072D0049D4B7 /* wbcompvariablemap.cpp in Sources */,
+				6BD3B7791952072D0049D4B7 /* wbpeabs.cpp in Sources */,
+				6BD3B77B1952072D0049D4B7 /* wbpeadd.cpp in Sources */,
+				6BD3B77D1952072D0049D4B7 /* wbpeand.cpp in Sources */,
+				6BD3B77F1952072D0049D4B7 /* wbpebinaryop.cpp in Sources */,
+				6BD3B7811952072D0049D4B7 /* wbpeconditional.cpp in Sources */,
+				6BD3B7831952072D0049D4B7 /* wbpeconstantbool.cpp in Sources */,
+				6BD3B7851952072D0049D4B7 /* wbpeconstantfloat.cpp in Sources */,
+				6BD3B7871952072D0049D4B7 /* wbpeconstantint.cpp in Sources */,
+				6BD3B7891952072D0049D4B7 /* wbpeconstantstring.cpp in Sources */,
+				6BD3B78B1952072D0049D4B7 /* wbpeconstantvector.cpp in Sources */,
+				6BD3B78D1952072D0049D4B7 /* wbpecross.cpp in Sources */,
+				6BD3B78F1952072D0049D4B7 /* wbpediv.cpp in Sources */,
+				6BD3B7911952072D0049D4B7 /* wbpedot.cpp in Sources */,
+				6BD3B7931952072D0049D4B7 /* wbpegetentitybylabel.cpp in Sources */,
+				6BD3B7951952072D0049D4B7 /* wbpegetname.cpp in Sources */,
+				6BD3B7971952072D0049D4B7 /* wbpegetstate.cpp in Sources */,
+				6BD3B7991952072D0049D4B7 /* wbpegetvariable.cpp in Sources */,
+				6BD3B79B1952072D0049D4B7 /* wbpelength.cpp in Sources */,
+				6BD3B79D1952072D0049D4B7 /* wbpelookup.cpp in Sources */,
+				6BD3B79F1952072D0049D4B7 /* wbpemax.cpp in Sources */,
+				6BD3B7A11952072D0049D4B7 /* wbpemin.cpp in Sources */,
+				6B89F5E6220F743000BEEEE7 /* wbpereactionsself.cpp in Sources */,
+				6BD3B7A31952072D0049D4B7 /* wbpemul.cpp in Sources */,
+				6BD3B7A51952072D0049D4B7 /* wbpenormal.cpp in Sources */,
+				6BD3B7A71952072D0049D4B7 /* wbpenot.cpp in Sources */,
+				6BD3B7A91952072D0049D4B7 /* wbpenull.cpp in Sources */,
+				6BD3B7AB1952072D0049D4B7 /* wbpeor.cpp in Sources */,
+				6BD3B7AD1952072D0049D4B7 /* wbpeowner.cpp in Sources */,
+				6BD3B7AF1952072D0049D4B7 /* wbpepow.cpp in Sources */,
+				6BD3B7B11952072D0049D4B7 /* wbpepushcontext.cpp in Sources */,
+				6BD3B7B31952072D0049D4B7 /* wbpequeryactionstack.cpp in Sources */,
+				6BD3B7B51952072D0049D4B7 /* wbperandombool.cpp in Sources */,
+				6BD3B7B71952072D0049D4B7 /* wbperandomfloat.cpp in Sources */,
+				6BD3B7B91952072D0049D4B7 /* wbperandomint.cpp in Sources */,
+				6BD3B7BB1952072D0049D4B7 /* wbperandomvector.cpp in Sources */,
+				6BD3B7BD1952072D0049D4B7 /* wbpesaturate.cpp in Sources */,
+				6BD3B7BF1952072D0049D4B7 /* wbpeselector.cpp in Sources */,
+				6BD3B7C11952072D0049D4B7 /* wbpeself.cpp in Sources */,
+				6BD3B7C31952072D0049D4B7 /* wbpesquare.cpp in Sources */,
+				6BD3B7C51952072D0049D4B7 /* wbpestatmod.cpp in Sources */,
+				6BD3B7C71952072D0049D4B7 /* wbpesub.cpp in Sources */,
+				6BD3B7C91952072D0049D4B7 /* wbpeunaryop.cpp in Sources */,
+				6BD3B7CB1952072D0049D4B7 /* wbpexor.cpp in Sources */,
+				6BD3B7CD1952072D0049D4B7 /* wbaction.cpp in Sources */,
+				6BD3B7CF1952072D0049D4B7 /* wbactionfactory.cpp in Sources */,
+				6BD3B7D21952072D0049D4B7 /* wbactionstack.cpp in Sources */,
+				6BD3B7D41952072D0049D4B7 /* wbcomponent.cpp in Sources */,
+				6BD3B7D61952072D0049D4B7 /* wbcomponentarrays.cpp in Sources */,
+				6BD3B7D91952072D0049D4B7 /* wbentity.cpp in Sources */,
+				6BD3B7DC1952072D0049D4B7 /* wbevent.cpp in Sources */,
+				6BD3B7DE1952072D0049D4B7 /* wbeventmanager.cpp in Sources */,
+				6BD3B7E01952072D0049D4B7 /* wbparamevaluator.cpp in Sources */,
+				6BD3B7E21952072D0049D4B7 /* wbparamevaluatorfactory.cpp in Sources */,
+				6BD3B7E41952072D0049D4B7 /* wbpatternmatching.cpp in Sources */,
+				6BD3B7E61952072D0049D4B7 /* wbpe.cpp in Sources */,
+				6BD3B7E91952072D0049D4B7 /* wbrule.cpp in Sources */,
+				6BD3B7EB1952072D0049D4B7 /* wbscene.cpp in Sources */,
+				6BD3B7ED1952072D0049D4B7 /* wbworld.cpp in Sources */,
+				6B277D7819A85CB2001E3321 /* wbactionsetstate.cpp in Sources */,
+				6B277D7C19A85CC2001E3321 /* wbpeisstate.cpp in Sources */,
+				6B0E82721C2354DB00521B86 /* wbpegetconfigvar.cpp in Sources */,
+				6B0E85851CAEEDB000521B86 /* wbpeconstantangles.cpp in Sources */,
+				6B0E85871CAEEDB000521B86 /* wbpeneg.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6BD3B6AE1952071B0049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6BD3B6AF1952071B0049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6BD3B6B11952071B0049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		6BD3B6B21952071B0049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _FINAL;
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BD3B6A61952071B0049D4B7 /* Build configuration list for PBXProject "Workbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B6AE1952071B0049D4B7 /* Debug */,
+				6BD3B6AF1952071B0049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD3B6B01952071B0049D4B7 /* Build configuration list for PBXNativeTarget "Workbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B6B11952071B0049D4B7 /* Debug */,
+				6BD3B6B21952071B0049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BD3B6A31952071B0049D4B7 /* Project object */;
+}

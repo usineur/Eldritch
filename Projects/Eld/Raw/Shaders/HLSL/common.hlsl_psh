@@ -1,0 +1,6 @@
+float4 SampleAndClip( sampler Sampler, float2 UV )
+{
+	float4 Sample = tex2D( Sampler, UV );
+	clip( Sample.a - 0.5f );
+	return Sample;
+}

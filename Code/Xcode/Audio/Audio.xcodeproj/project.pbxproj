@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BB2B7272043822D00CBC0E0 /* soloudaudiosystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2B7212043822D00CBC0E0 /* soloudaudiosystem.cpp */; };
+		6BB2B7282043822D00CBC0E0 /* soloudaudiosystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB2B7222043822D00CBC0E0 /* soloudaudiosystem.h */; };
+		6BB2B7292043822D00CBC0E0 /* soloudsound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2B7232043822D00CBC0E0 /* soloudsound.cpp */; };
+		6BB2B72A2043822D00CBC0E0 /* soloudsound.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB2B7242043822D00CBC0E0 /* soloudsound.h */; };
+		6BB2B72B2043822D00CBC0E0 /* soloudsoundinstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2B7252043822D00CBC0E0 /* soloudsoundinstance.cpp */; };
+		6BB2B72C2043822D00CBC0E0 /* soloudsoundinstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB2B7262043822D00CBC0E0 /* soloudsoundinstance.h */; };
+		6BD3B66C195206F30049D4B7 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B634195206F30049D4B7 /* audio.cpp */; };
+		6BD3B66D195206F30049D4B7 /* audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B635195206F30049D4B7 /* audio.h */; };
+		6BD3B66E195206F30049D4B7 /* audiosystemcommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B636195206F30049D4B7 /* audiosystemcommon.cpp */; };
+		6BD3B66F195206F30049D4B7 /* audiosystemcommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B637195206F30049D4B7 /* audiosystemcommon.h */; };
+		6BD3B67E195206F30049D4B7 /* iaudiosystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B647195206F30049D4B7 /* iaudiosystem.h */; };
+		6BD3B67F195206F30049D4B7 /* isound.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B648195206F30049D4B7 /* isound.h */; };
+		6BD3B680195206F30049D4B7 /* isoundinstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B649195206F30049D4B7 /* isoundinstance.h */; };
+		6BD3B697195206F40049D4B7 /* sound3dlistener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B661195206F30049D4B7 /* sound3dlistener.cpp */; };
+		6BD3B698195206F40049D4B7 /* sound3dlistener.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B662195206F30049D4B7 /* sound3dlistener.h */; };
+		6BD3B699195206F40049D4B7 /* soundcommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B663195206F30049D4B7 /* soundcommon.cpp */; };
+		6BD3B69A195206F40049D4B7 /* soundcommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B664195206F30049D4B7 /* soundcommon.h */; };
+		6BD3B69B195206F40049D4B7 /* soundinstancecommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B665195206F30049D4B7 /* soundinstancecommon.cpp */; };
+		6BD3B69C195206F40049D4B7 /* soundinstancecommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B666195206F30049D4B7 /* soundinstancecommon.h */; };
+		6BD3B69D195206F40049D4B7 /* soundmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B667195206F30049D4B7 /* soundmanager.cpp */; };
+		6BD3B69E195206F40049D4B7 /* soundmanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3B668195206F30049D4B7 /* soundmanager.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6BB2B7212043822D00CBC0E0 /* soloudaudiosystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soloudaudiosystem.cpp; sourceTree = "<group>"; };
+		6BB2B7222043822D00CBC0E0 /* soloudaudiosystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soloudaudiosystem.h; sourceTree = "<group>"; };
+		6BB2B7232043822D00CBC0E0 /* soloudsound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soloudsound.cpp; sourceTree = "<group>"; };
+		6BB2B7242043822D00CBC0E0 /* soloudsound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soloudsound.h; sourceTree = "<group>"; };
+		6BB2B7252043822D00CBC0E0 /* soloudsoundinstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soloudsoundinstance.cpp; sourceTree = "<group>"; };
+		6BB2B7262043822D00CBC0E0 /* soloudsoundinstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soloudsoundinstance.h; sourceTree = "<group>"; };
+		6BD3B626195206E20049D4B7 /* libAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD3B634195206F30049D4B7 /* audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio.cpp; sourceTree = "<group>"; };
+		6BD3B635195206F30049D4B7 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		6BD3B636195206F30049D4B7 /* audiosystemcommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiosystemcommon.cpp; sourceTree = "<group>"; };
+		6BD3B637195206F30049D4B7 /* audiosystemcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiosystemcommon.h; sourceTree = "<group>"; };
+		6BD3B647195206F30049D4B7 /* iaudiosystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iaudiosystem.h; sourceTree = "<group>"; };
+		6BD3B648195206F30049D4B7 /* isound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isound.h; sourceTree = "<group>"; };
+		6BD3B649195206F30049D4B7 /* isoundinstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isoundinstance.h; sourceTree = "<group>"; };
+		6BD3B661195206F30049D4B7 /* sound3dlistener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sound3dlistener.cpp; sourceTree = "<group>"; };
+		6BD3B662195206F30049D4B7 /* sound3dlistener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound3dlistener.h; sourceTree = "<group>"; };
+		6BD3B663195206F30049D4B7 /* soundcommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soundcommon.cpp; sourceTree = "<group>"; };
+		6BD3B664195206F30049D4B7 /* soundcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundcommon.h; sourceTree = "<group>"; };
+		6BD3B665195206F30049D4B7 /* soundinstancecommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soundinstancecommon.cpp; sourceTree = "<group>"; };
+		6BD3B666195206F30049D4B7 /* soundinstancecommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundinstancecommon.h; sourceTree = "<group>"; };
+		6BD3B667195206F30049D4B7 /* soundmanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soundmanager.cpp; sourceTree = "<group>"; };
+		6BD3B668195206F30049D4B7 /* soundmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundmanager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BD3B623195206E20049D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD3B61B195206E20049D4B7 = {
+			isa = PBXGroup;
+			children = (
+				6BD3B633195206F30049D4B7 /* src */,
+				6BD3B627195206E20049D4B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BD3B627195206E20049D4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BD3B626195206E20049D4B7 /* libAudio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BD3B633195206F30049D4B7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2B7212043822D00CBC0E0 /* soloudaudiosystem.cpp */,
+				6BB2B7222043822D00CBC0E0 /* soloudaudiosystem.h */,
+				6BB2B7232043822D00CBC0E0 /* soloudsound.cpp */,
+				6BB2B7242043822D00CBC0E0 /* soloudsound.h */,
+				6BB2B7252043822D00CBC0E0 /* soloudsoundinstance.cpp */,
+				6BB2B7262043822D00CBC0E0 /* soloudsoundinstance.h */,
+				6BD3B634195206F30049D4B7 /* audio.cpp */,
+				6BD3B635195206F30049D4B7 /* audio.h */,
+				6BD3B636195206F30049D4B7 /* audiosystemcommon.cpp */,
+				6BD3B637195206F30049D4B7 /* audiosystemcommon.h */,
+				6BD3B647195206F30049D4B7 /* iaudiosystem.h */,
+				6BD3B648195206F30049D4B7 /* isound.h */,
+				6BD3B649195206F30049D4B7 /* isoundinstance.h */,
+				6BD3B661195206F30049D4B7 /* sound3dlistener.cpp */,
+				6BD3B662195206F30049D4B7 /* sound3dlistener.h */,
+				6BD3B663195206F30049D4B7 /* soundcommon.cpp */,
+				6BD3B664195206F30049D4B7 /* soundcommon.h */,
+				6BD3B665195206F30049D4B7 /* soundinstancecommon.cpp */,
+				6BD3B666195206F30049D4B7 /* soundinstancecommon.h */,
+				6BD3B667195206F30049D4B7 /* soundmanager.cpp */,
+				6BD3B668195206F30049D4B7 /* soundmanager.h */,
+			);
+			name = src;
+			path = ../../Libraries/Audio/src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BD3B624195206E20049D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B66D195206F30049D4B7 /* audio.h in Headers */,
+				6BD3B66F195206F30049D4B7 /* audiosystemcommon.h in Headers */,
+				6BD3B67E195206F30049D4B7 /* iaudiosystem.h in Headers */,
+				6BD3B67F195206F30049D4B7 /* isound.h in Headers */,
+				6BB2B72A2043822D00CBC0E0 /* soloudsound.h in Headers */,
+				6BB2B7282043822D00CBC0E0 /* soloudaudiosystem.h in Headers */,
+				6BD3B680195206F30049D4B7 /* isoundinstance.h in Headers */,
+				6BB2B72C2043822D00CBC0E0 /* soloudsoundinstance.h in Headers */,
+				6BD3B698195206F40049D4B7 /* sound3dlistener.h in Headers */,
+				6BD3B69A195206F40049D4B7 /* soundcommon.h in Headers */,
+				6BD3B69C195206F40049D4B7 /* soundinstancecommon.h in Headers */,
+				6BD3B69E195206F40049D4B7 /* soundmanager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BD3B625195206E20049D4B7 /* Audio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD3B62A195206E20049D4B7 /* Build configuration list for PBXNativeTarget "Audio" */;
+			buildPhases = (
+				6BD3B622195206E20049D4B7 /* Sources */,
+				6BD3B623195206E20049D4B7 /* Frameworks */,
+				6BD3B624195206E20049D4B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audio;
+			productName = Audio;
+			productReference = 6BD3B626195206E20049D4B7 /* libAudio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BD3B61D195206E20049D4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 6BD3B620195206E20049D4B7 /* Build configuration list for PBXProject "Audio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BD3B61B195206E20049D4B7;
+			productRefGroup = 6BD3B627195206E20049D4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD3B625195206E20049D4B7 /* Audio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD3B622195206E20049D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD3B66C195206F30049D4B7 /* audio.cpp in Sources */,
+				6BD3B66E195206F30049D4B7 /* audiosystemcommon.cpp in Sources */,
+				6BD3B697195206F40049D4B7 /* sound3dlistener.cpp in Sources */,
+				6BB2B72B2043822D00CBC0E0 /* soloudsoundinstance.cpp in Sources */,
+				6BD3B699195206F40049D4B7 /* soundcommon.cpp in Sources */,
+				6BD3B69B195206F40049D4B7 /* soundinstancecommon.cpp in Sources */,
+				6BD3B69D195206F40049D4B7 /* soundmanager.cpp in Sources */,
+				6BB2B7272043822D00CBC0E0 /* soloudaudiosystem.cpp in Sources */,
+				6BB2B7292043822D00CBC0E0 /* soloudsound.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6BD3B628195206E20049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6BD3B629195206E20049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6BD3B62B195206E20049D4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+					../../Libraries/SoLoud/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		6BD3B62C195206E20049D4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _FINAL;
+				HEADER_SEARCH_PATHS = (
+					../../Libraries/zlib/src,
+					../../Libraries/Core/src,
+					../../Libraries/Math/src,
+					../../Libraries/GLEW/src,
+					../../Libraries/3D/src,
+					../../Libraries/Audio/src,
+					../../Libraries/Workbench/src,
+					../../Libraries/Rodin/src,
+					../../Libraries/Framework/src,
+					../../Libraries/SoLoud/src,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BD3B620195206E20049D4B7 /* Build configuration list for PBXProject "Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B628195206E20049D4B7 /* Debug */,
+				6BD3B629195206E20049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD3B62A195206E20049D4B7 /* Build configuration list for PBXNativeTarget "Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3B62B195206E20049D4B7 /* Debug */,
+				6BD3B62C195206E20049D4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BD3B61D195206E20049D4B7 /* Project object */;
+}

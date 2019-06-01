@@ -1,0 +1,6 @@
+#include "particles.hlsl_psh"
+
+float4 Main( PS_INPUT In ) : COLOR
+{
+	return In.Color * tex2D( Sampler, In.UV );
+}

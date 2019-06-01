@@ -1,0 +1,11 @@
+float4 LightCube[6];
+
+float4 GetCubeLight( float3 InNormal )
+{
+	float3 NormalSquared = InNormal * InNormal;
+	int3 IsNegative = InNormal < 0.0f;
+	return
+		NormalSquared.x * LightCube[ IsNegative.x ] +
+		NormalSquared.y * LightCube[ IsNegative.y + 2 ] +
+		NormalSquared.z * LightCube[ IsNegative.z + 4 ];
+}

@@ -1,0 +1,10 @@
+#include "particles.hlsl_psh"
+
+float4 Main( PS_INPUT In ) : COLOR
+{
+	const float4 DiffuseColor	= In.Color * SampleAndClip( Sampler, In.UV );
+	const float4 LightColor		= GetCubeLight( normalize( In.Normal ) );
+	const float4 FogValue		= GetFog( In.PositionWS, FogSampler );
+
+	return BlendFog( FogValue, DiffuseColor * LightColor );
+}

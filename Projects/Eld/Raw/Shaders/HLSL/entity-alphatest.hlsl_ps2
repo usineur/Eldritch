@@ -1,0 +1,22 @@
+#include "common.hlsl_psh"
+#include "lighting.hlsl_psh"
+#include "fog.hlsl_psh"
+
+sampler Sampler		: register(s0);
+sampler FogSampler	: register(s1);
+
+struct PS_INPUT 
+{
+	float2 UV			: TEXCOORD0;
+	float3 Normal		: TEXCOORD1;
+	float3 PositionWS	: TEXCOORD2;
+};
+
+float4 Main( PS_INPUT In ) : COLOR
+{
+	const float4 DiffuseColor	= SampleAndClip( Sampler, In.UV );
+	const float4 LightColor		= GetCubeLight( normalize( In.Normal ) );
+	const float4 FogValue		= GetFog( In.PositionWS, FogSampler );
+
+	return BlendFog( FogValue, DiffuseColor * LightColor );
+}

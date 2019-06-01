@@ -1,0 +1,15 @@
+#include "common.hlsl_psh"
+
+sampler Sampler	: register(s0);
+
+struct PS_INPUT 
+{
+	float2 UV	: TEXCOORD0;
+};
+
+float4 Main( PS_INPUT In ) : COLOR
+{
+	// Don't render minimap with color blindness; that will get applied during HUD pass.
+	// If we do it here, then we double up on it.
+	return tex2D( Sampler, In.UV );
+}

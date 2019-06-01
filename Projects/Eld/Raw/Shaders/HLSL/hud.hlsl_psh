@@ -1,0 +1,19 @@
+uniform float4 ConstantColor;
+
+#include "colorblind.hlsl_psh"
+
+struct PS_INPUT 
+{
+	float2 UV : TEXCOORD0;
+};
+
+float4 Main( PS_INPUT In ) : COLOR
+{
+	const float4 FinalColor = UIColor( ConstantColor * tex2D( Sampler, In.UV ) );
+
+#if COLOR_BLIND
+	return mul( COLOR_BLIND_TYPE, FinalColor );
+#else
+	return FinalColor;
+#endif
+}

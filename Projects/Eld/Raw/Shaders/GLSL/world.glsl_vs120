@@ -1,0 +1,20 @@
+#version 120
+
+uniform mat4	WVP;
+uniform mat4	WorldMatrix;
+
+attribute vec4	InPosition;
+attribute vec4	InColor;
+attribute vec2	InUV;
+
+varying vec2	PassUV;
+varying vec4	PassColor;
+varying vec3	PassPositionWS;
+
+void main()
+{
+	gl_Position		= InPosition * WVP;
+	PassPositionWS	= ( InPosition * WorldMatrix ).xyz;
+	PassUV			= InUV;
+	PassColor		= InColor;
+}

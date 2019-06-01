@@ -1,0 +1,11 @@
+#include "common.hlsl_psh"
+#include "calibration.hlsl_psh"
+
+sampler Sampler	: register(s0);
+
+float4 UIColor( const float4 Color )
+{
+	return float4( Calibrate( Color.rgb ), 1.0f );
+}
+
+#include "hud.hlsl_psh"

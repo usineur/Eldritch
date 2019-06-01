@@ -1,0 +1,84 @@
+#version 120
+
+// ****************************************************************
+// BEGIN CALIBRATION
+uniform vec4 Gamma;	// Used as float
+
+float Luma( vec3 Color )
+{
+	return dot( Color, vec3( 0.299f, 0.587f, 0.114f ) );
+}
+
+vec3 Calibrate( vec3 Color )
+{
+	return pow( clamp( Color.rgb, 0.0f, 1.0f ), vec3( Gamma.x ) );
+}
+
+// END CALIBRATION
+// ****************************************************************
+
+// ****************************************************************
+// BEGIN COLOR GRADING
+
+float CGTexSize		= 16.0f;
+float CGTexSizeSq	= CGTexSize * CGTexSize;
+
+// TODO: Vectorize all of this?
+
+// Red is the easiest value; it is just scaled from [0, 1] to [1/d, 1-1/d].
+float OffsetR		= 0.5f / CGTexSize;
+float ScaleR		= ( CGTexSize - 1.0f ) / CGTexSize;
+
+// Green is scaled from [0, 1] to [1/dd, (1/d)-1/dd]
+float OffsetG		= 0.5f / CGTexSizeSq;
+float ScaleG		= ( CGTexSize - 1.0f ) / CGTexSizeSq;
+
+// Blue is trickiest.
+// Scale from [0, 1] to [0, d-1].
+// Floor to get the low slice for lerp.
+// Add 1 to get the high slice for lerp.
+// Use remainder of floor as alpha for lerp.
+float ScaleB1		= CGTexSize - 1.0f;
+float ScaleB2		= 1.0f / CGTexSize;
+
+vec3 ColorGrade( vec3 InColor, sampler2D Sampler )
+{
+	vec3		Saturated	= clamp( InColor, 0.0f, 1.0f );
+
+	float		CoordR		= Saturated.r * ScaleR + OffsetR;
+	float		CoordG		= Saturated.g * ScaleG + OffsetG;
+
+	float		ScaledB		= Saturated.b * ScaleB1;
+	float		LoB			= floor( ScaledB );
+	float		HiB			= LoB + 1.0f;
+	float		AlphaB		= ScaledB - LoB;
+	float		CoordLoB	= LoB * ScaleB2;
+	float		CoordHiB	= HiB * ScaleB2;
+
+	vec2	LoUV		= vec2( CoordLoB + CoordG, CoordR );
+	vec3	LoColor		= texture2D( Sampler, LoUV ).rgb;
+
+	vec2	HiUV		= vec2( CoordHiB + CoordG, CoordR );
+	vec3	HiColor		= texture2D( Sampler, HiUV ).rgb;
+
+	return mix( LoColor, HiColor, AlphaB );
+}
+
+// END COLOR GRADING
+// ****************************************************************
+
+vec2 FixUV( vec2 UV )
+{
+	return vec2( UV.x, 1.0f - UV.y );
+}
+
+uniform sampler2D Texture0;	// Diffuse
+uniform sampler2D Texture1;	// Color grading LUT
+
+varying vec2	PassUV;
+
+void main()
+{
+	vec3 GradedColor = Calibrate( ColorGrade( texture2D( Texture0, FixUV( PassUV ) ).rgb, Texture1 ) );
+	gl_FragColor = vec4( GradedColor, Luma( GradedColor ) );
+}

@@ -1,0 +1,33 @@
+#version 120
+
+// ****************************************************************
+// BEGIN CALIBRATION
+uniform vec4 Gamma;	// Used as float
+
+float Luma( vec3 Color )
+{
+	return dot( Color, vec3( 0.299f, 0.587f, 0.114f ) );
+}
+
+vec3 Calibrate( vec3 Color )
+{
+	return pow( clamp( Color.rgb, 0.0f, 1.0f ), vec3( Gamma.x ) );
+}
+
+// END CALIBRATION
+// ****************************************************************
+
+vec2 FixUV( vec2 UV )
+{
+	return vec2( UV.x, 1.0f - UV.y );
+}
+
+uniform sampler2D Texture0;	// Diffuse
+
+varying vec2	PassUV;
+
+void main()
+{
+	vec3 GradedColor = Calibrate( texture2D( Texture0, FixUV( PassUV ) ).rgb );
+	gl_FragColor = vec4( GradedColor, Luma( GradedColor ) );
+}

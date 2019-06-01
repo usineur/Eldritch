@@ -1,0 +1,38 @@
+static float	FogTexSize	= 32.0f;
+static float	FogOffsetU	= 0.5f / FogTexSize;
+static float	FogScaleU	= ( FogTexSize - 1.0f ) / FogTexSize;
+
+float3			FogViewPosition;	// Set from code
+float2			FogParams;			// Set from code: x = near, y = 1/(far-near)
+
+// Scales and clamps depth to [0,1] based on 
+float ScaleDepth( const float InDepth )
+{
+	const float ScaledDepth = ( InDepth - FogParams.x ) * FogParams.y;
+	return saturate( ScaledDepth );
+}
+
+float ScaleDepthFromView( const float3 PositionWS )
+{
+	const float Depth = distance( FogViewPosition, PositionWS );
+	return ScaleDepth( Depth );
+}
+
+float4 GetFog( const float3 PositionWS, sampler FogSampler )
+{
+	const float		Depth		= ScaleDepthFromView( PositionWS );
+	const float		FogU		= Depth * FogScaleU + FogOffsetU;
+	const float2	FogUV		= float2( FogU, 0.0f );
+	const float4	FogValue	= tex2D( FogSampler, FogUV );
+
+	return FogValue;
+}
+
+float4 BlendFog( const float4 FogValue, const float4 Color )
+{
+	const float		FogAlpha		= FogValue.a;
+	const float4	FogColor		= float4( FogValue.rgb, Color.a );
+	const float4	BlendedColor	= lerp( Color, FogColor, FogAlpha );
+
+	return BlendedColor;
+}

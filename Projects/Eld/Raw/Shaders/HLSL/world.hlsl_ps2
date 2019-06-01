@@ -1,0 +1,21 @@
+#include "common.hlsl_psh"
+#include "fog.hlsl_psh"
+
+sampler Sampler		: register(s0);
+sampler FogSampler	: register(s1);
+
+struct PS_INPUT 
+{
+	float2 UV			: TEXCOORD0;
+	float4 Color		: TEXCOORD1;
+	float3 PositionWS	: TEXCOORD2;
+};
+
+// TODO: Rename this shader to describe what it *does*, not what it's *used for*.
+float4 Main( PS_INPUT In ) : COLOR
+{
+	const float4 DiffuseColor	= In.Color * tex2D( Sampler, In.UV );
+	const float4 FogValue		= GetFog( In.PositionWS, FogSampler );
+
+	return BlendFog( FogValue, DiffuseColor );
+}

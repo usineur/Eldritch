@@ -1,0 +1,11 @@
+#include "common.hlsl_psh"
+
+sampler Sampler	: register(s0);
+
+float4 UIColor( const float4 Color )
+{
+	clip( any( Color.rgb ) ? 1.0f : -1.0f );
+	return Color;
+}
+
+#include "hud.hlsl_psh"

@@ -1,0 +1,29 @@
+#include "common.hlsl_vsh"
+
+struct VS_INPUT 
+{
+	float4 Position		: POSITION;
+	float2 UV			: TEXCOORD0;
+	float4 Color		: TEXCOORD1;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position		: POSITION;
+	float2 UV			: TEXCOORD0;
+	float4 Color		: TEXCOORD1;
+	float3 PositionWS	: TEXCOORD2;
+};
+
+// TODO: Rename this shader to describe what it *does*, not what it's *used for*.
+VS_OUTPUT Main( VS_INPUT In )
+{
+	VS_OUTPUT Out;
+
+	Out.Position	= mul( In.Position, WVP );
+	Out.PositionWS	= mul( In.Position, WorldMatrix );
+	Out.UV			= In.UV;
+	Out.Color		= In.Color;
+	
+	return Out;
+}

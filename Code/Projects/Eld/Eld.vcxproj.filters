@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Achievements\achievementmanager_steam.cpp">
+      <Filter>src\Achievements</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\uiscreen-eldbindinputs.cpp">
+      <Filter>src\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\uiscreen-eldcredits.cpp">
+      <Filter>src\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\uiscreen-eldsetres.cpp">
+      <Filter>src\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimEvents\animeventeldexecuteaction.cpp">
+      <Filter>src\AnimEvents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimEvents\animeventeldsendevent.cpp">
+      <Filter>src\AnimEvents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldlookat.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldmoveto.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldplayanim.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldplaybark.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldstopmoving.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BTNodes\rodinbtnodeeldturntoward.cpp">
+      <Filter>src\BTNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exceptionwritesteamminidump.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldfactions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldframework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldgame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldirradiance.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldmesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldmusic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldnav.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldparticles.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldpersistence.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldroom.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldsaveload.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldsound3dlistener.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldsurfaces.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldtargetmanager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldtools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldwardrobe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldwbscenehelpers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldworld.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldworldgen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uiinputmapeld.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbeldcomponent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\uiscreen-eldleaderboards.cpp">
+      <Filter>src\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\uiscreen-eldmirror.cpp">
+      <Filter>src\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldaimotion.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldammobag.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldanchor.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldazathoth.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldcamera.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldcharacter.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldclimbable.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldcollision.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompelddamager.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompelddoor.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompelddropshadow.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldendgamecounter.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldfaction.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldfootsteps.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldfrobbable.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldfrobber.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldhands.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldhard.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldhardlistener.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldheadtracker.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldhealth.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldhudmarker.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldicicles.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldinventory.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompelditem.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldkeyring.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldlight.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldlock.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldmapmarker.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldmarkup.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldmesh.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldminimap.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldparticles.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldpickup.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldplayer.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldpowerteleport.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldrespawner.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldrope.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensor.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensordamage.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensorhearing.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensormarkup.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensorpoll.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensortheft.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsensorvision.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsleeper.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsouls.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldsound.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldspikes.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldthinker.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldthinkerhearwormtarget.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldthinkerpatrol.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldthinkertarget.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldtransform.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldtrapbolt.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldusable.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldvisible.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldwallet.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldwatson.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcompeldweapon.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Components\wbcomprodinbehaviortree_debugrender.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldaddblock.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldbanktransaction.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldbindinput.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldcheckcone.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldcheckline.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldchecksphere.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactionelddamageworld.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldgiveitem.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldgotolevel.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldlaunchuserid.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldlaunchwebsite.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldopenuserdatapath.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldplayanim.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldplayhandanim.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldpostscore.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldremoveblock.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldsetlight.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldsetpersistentvar.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldshowbook.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldspawnentity.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldstopmotion.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactioneldtweetrip.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactionneonawardachievement.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactionneonincrementstat.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\wbactionneonsetstat.cpp">
+      <Filter>src\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eldbank.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Leaderboards\leaderboards_steam.cpp">
+      <Filter>src\Leaderboards</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeelddistance.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetcharactervo.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetfaction.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetitem.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetlocation.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetpersistentvar.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetplaytime.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetslot.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldgetvelocity.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldhardscalar.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldhardswitch.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PEs\wbpeeldplayer.cpp">
+      <Filter>src\PEs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpelddropshadow.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldfxaa.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldhud.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldhudcalibration.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldlit.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldpost.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDPs\sdpeldworld.cpp">
+      <Filter>src\SDPs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Achievements\achievementmanager_steam.h">
+      <Filter>src\Achievements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Achievements\iachievementmanager.h">
+      <Filter>src\Achievements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\uiscreen-eldbindinputs.h">
+      <Filter>src\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\uiscreen-eldcredits.h">
+      <Filter>src\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\uiscreen-eldsetres.h">
+      <Filter>src\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimEvents\animeventeldexecuteaction.h">
+      <Filter>src\AnimEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimEvents\animeventeldsendevent.h">
+      <Filter>src\AnimEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldlookat.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldmoveto.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldplayanim.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldplaybark.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldstopmoving.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BTNodes\rodinbtnodeeldturntoward.h">
+      <Filter>src\BTNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldanimevents.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldfactions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldframework.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldgame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldirradiance.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldmesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldmusic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldnav.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldparticles.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldpersistence.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldrodinbtnodes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldroom.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldsaveload.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldsdps.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldsound3dlistener.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldsurfaces.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldtargetmanager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldtools.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\elduiscreens.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldwardrobe.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldwbactions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldwbcomponents.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldwbpes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldwbscenehelpers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldworld.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldworldgen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uiinputmapeld.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbeldcomponent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\uiscreen-eldleaderboards.h">
+      <Filter>src\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\uiscreen-eldmirror.h">
+      <Filter>src\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldaimotion.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldammobag.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldanchor.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldazathoth.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldcamera.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldcharacter.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldclimbable.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldcollision.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompelddamager.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompelddoor.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompelddropshadow.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldendgamecounter.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldfaction.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldfootsteps.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldfrobbable.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldfrobber.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldhands.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldhard.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldhardlistener.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldheadtracker.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldhealth.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldhudmarker.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldicicles.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldinventory.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompelditem.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldkeyring.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldlight.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldlock.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldmapmarker.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldmarkup.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldmesh.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldminimap.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldparticles.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldpickup.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldplayer.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldpowerteleport.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldrespawner.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldrope.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensor.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensordamage.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensorhearing.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensormarkup.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensorpoll.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensortheft.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsensorvision.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsleeper.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsouls.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldsound.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldspikes.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldthinker.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldthinkerhearwormtarget.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldthinkerpatrol.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldthinkertarget.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldtransform.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldtrapbolt.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldusable.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldvisible.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldwallet.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldwatson.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\wbcompeldweapon.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldaddblock.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldbanktransaction.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldbindinput.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldcheckcone.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldcheckline.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldchecksphere.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactionelddamageworld.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldgiveitem.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldgotolevel.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldlaunchuserid.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldlaunchwebsite.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldopenuserdatapath.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldplayanim.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldplayhandanim.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldpostscore.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldremoveblock.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldsetlight.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldsetpersistentvar.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldshowbook.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldspawnentity.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldstopmotion.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactioneldtweetrip.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactionneonawardachievement.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactionneonincrementstat.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\wbactionneonsetstat.h">
+      <Filter>src\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eldbank.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leaderboards\ileaderboards.h">
+      <Filter>src\Leaderboards</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leaderboards\leaderboards_steam.h">
+      <Filter>src\Leaderboards</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeelddistance.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetcharactervo.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetfaction.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetitem.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetlocation.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetpersistentvar.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetplaytime.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetslot.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldgetvelocity.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldhardscalar.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldhardswitch.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PEs\wbpeeldplayer.h">
+      <Filter>src\PEs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpelddropshadow.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldfxaa.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldhud.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldhudcalibration.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldlit.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldpost.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDPs\sdpeldworld.h">
+      <Filter>src\SDPs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamapplist.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamapps.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamappticket.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamclient.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamcontroller.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamfriends.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamgamecoordinator.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamgameserver.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamgameserverstats.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamhtmlsurface.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamhttp.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteaminventory.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteammasterserverupdater.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteammatchmaking.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteammusic.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteammusicremote.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamnetworking.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamparentalsettings.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamps3overlayrenderer.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamremotestorage.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamscreenshots.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamugc.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamuser.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamuserstats.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamutils.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\isteamvideo.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\matchmakingtypes.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steam_api.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steam_api_internal.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steam_gameserver.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamclientpublic.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamencryptedappticket.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamhttpenums.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamps3params.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamtypes.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\steam\steamuniverse.h">
+      <Filter>src\steam</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Eld.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Eld.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{967fcce7-9e24-4138-b486-c976caaf2ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Achievements">
+      <UniqueIdentifier>{c7315264-9fcc-4b8d-9db4-263fe474a5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Actions">
+      <UniqueIdentifier>{d8e0f169-883b-4e94-801e-b1c79f9f1acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AnimEvents">
+      <UniqueIdentifier>{c8f94ad3-5b8e-493b-9d9d-3e566a087000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\BTNodes">
+      <UniqueIdentifier>{8186478f-d471-436c-83c1-efe87640f4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Components">
+      <UniqueIdentifier>{cf651994-6d80-4e96-adbf-c1c68667efde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PEs">
+      <UniqueIdentifier>{836da8ac-31aa-4cfc-87fe-af5ed9110977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Screens">
+      <UniqueIdentifier>{b478d13d-2182-4723-880b-bc6acec04182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SDPs">
+      <UniqueIdentifier>{8d8d2afc-010a-4d13-a63c-09bfdca9dd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\steam">
+      <UniqueIdentifier>{49f0903c-a1a1-4900-98cc-8e40036dc3e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Leaderboards">
+      <UniqueIdentifier>{c520ed55-b38f-441d-a818-fd8a9313beb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
