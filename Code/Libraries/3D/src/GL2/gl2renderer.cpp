@@ -220,7 +220,7 @@ bool GL2Renderer::Reset()
 
 /*virtual*/ void GL2Renderer::Refresh()
 {
-#if BUILD_SDL
+#if BUILD_SDL && !BUILD_SWITCH
 	// On Linux, at least, SDL needs to be set as the current context *after* the
 	// GL window is shown, so this allows be to do it there.
 	if( m_Window && m_Window->GetSDLWindow() && m_RenderContext )

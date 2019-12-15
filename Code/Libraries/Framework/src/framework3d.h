@@ -126,7 +126,9 @@ protected:
 	WBEventManager*			m_EventManager;	// Event manager for framework only, not for game.
 	Display*				m_Display;
 	Window*					m_Window;
+#if !BUILD_SWITCH
 	Window*					m_SplashWindow;
+#endif
 	Keyboard*				m_Keyboard;
 	Mouse*					m_Mouse;
 	Clock*					m_Clock;

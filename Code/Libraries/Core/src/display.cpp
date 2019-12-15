@@ -34,7 +34,11 @@ Display::Display()
 	m_AspectRatio = static_cast<float>( m_Width ) / static_cast<float>( m_Height );
 
 	STATICHASH( Fullscreen );
+#if BUILD_SWITCH
+	m_Fullscreen = true;
+#else
 	m_Fullscreen = ConfigManager::GetBool( sFullscreen );
+#endif
 
 #if BUILD_LINUX
 	// On Linux, changing the screen resolution isn't really supported, so always upscale.

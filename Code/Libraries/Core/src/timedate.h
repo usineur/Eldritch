@@ -7,7 +7,7 @@
 	#include <time.h>
 	typedef __time64_t	timedate_time_t;
 	typedef struct tm	timedate_tm_t;
-#elif BUILD_LINUX || BUILD_MAC
+#elif BUILD_LINUX || BUILD_MAC || BUILD_SWITCH
     #include <time.h>
 	typedef time_t	    timedate_time_t;
 	typedef struct tm	timedate_tm_t;

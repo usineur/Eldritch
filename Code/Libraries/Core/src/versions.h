@@ -19,8 +19,14 @@
 #define BUILD_LINUX	0
 #endif
 
+#ifdef __SWITCH__
+#define BUILD_SWITCH 1
+#else
+#define BUILD_SWITCH 0
+#endif
+
 #define BUILD_STEAM				0
-#define BUILD_SDL				( 0 || BUILD_MAC || BUILD_LINUX )
+#define BUILD_SDL				( 0 || BUILD_MAC || BUILD_LINUX || BUILD_SWITCH )
 #define BUILD_WINDOWS_NO_SDL	( BUILD_WINDOWS && ( !BUILD_SDL ) )
 
 #define REPORT_BUILD 0

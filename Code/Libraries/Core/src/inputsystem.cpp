@@ -830,7 +830,11 @@ float InputSystem::GetVelocity( const HashedString& Axis ) const
 void InputSystem::SetMouseScale( const HashedString& Axis, const float Scale )
 {
 	DEBUGASSERT( m_MouseAdjustments.Search( Axis ).IsValid() );
+#if BUILD_SWITCH
+	m_MouseAdjustments[ Axis ].m_ScaleFactor = 0;
+#else
 	m_MouseAdjustments[ Axis ].m_ScaleFactor = Scale;
+#endif
 }
 
 bool InputSystem::GetMouseInvert( const HashedString& Axis )

@@ -10,7 +10,7 @@ timedate_tm_t TimeDate::GetLocalTime()
 	_tzset();	// Apply environment variables so that _localtime_s will convert properly
 	_time64( &Time );
 	_localtime64_s( &TimeStruct, &Time );
-#elif BUILD_LINUX || BUILD_MAC
+#elif BUILD_LINUX || BUILD_MAC || BUILD_SWITCH
     tzset();
     time( &Time );
     localtime_r( &Time, &TimeStruct );

@@ -128,6 +128,10 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 extern "C" int main( int argc, char* argv[] )
 #endif
 {
+#if BUILD_SWITCH
+	socketInitializeDefault();
+	nxlinkStdio();
+#endif
 #if BUILD_WINDOWS_NO_SDL
 	Unused( hPrevInstance );
 	Unused( lpCmdLine );
@@ -153,6 +157,11 @@ extern "C" int main( int argc, char* argv[] )
 	SafeDelete( pFramework );
 
 	ShutDown();
+
+#if BUILD_SWITCH
+	SDL_Quit();
+	socketExit();
+#endif
 
 	return 0;
 }

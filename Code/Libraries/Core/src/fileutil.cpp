@@ -9,7 +9,7 @@
 #include <shlobj.h>
 #endif
 
-#if BUILD_LINUX || BUILD_MAC
+#if BUILD_LINUX || BUILD_MAC || BUILD_SWITCH
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -383,7 +383,7 @@ void GetFilesInFolderInternal( const SimpleString& Path, const SimpleString& Pre
 
 		FindClose( FileHandle );
 	}
-#elif BUILD_LINUX || BUILD_MAC
+#elif BUILD_LINUX || BUILD_MAC || BUILD_SWITCH
 	DIR*	pDirectory	= opendir( Path.CStr() );
 	if( pDirectory )
 	{
@@ -465,7 +465,7 @@ void GetFoldersInFolderInternal( const SimpleString& Path, const SimpleString& P
 
 		FindClose( FileHandle );
 	}
-#elif BUILD_LINUX || BUILD_MAC
+#elif BUILD_LINUX || BUILD_MAC || BUILD_SWITCH
 	DIR*	pDirectory	= opendir( Path.CStr() );
 	if( pDirectory )
 	{

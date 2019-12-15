@@ -35,6 +35,10 @@
 #include <csignal>
 #endif
 
+#if BUILD_SWITCH
+#include <switch.h>
+#endif
+
 // This should be the first file included in every .cpp (even before that
 // file's matching header).
 // This should be kept a very lightweight include that can go anywhere.

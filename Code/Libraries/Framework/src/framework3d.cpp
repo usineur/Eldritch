@@ -55,7 +55,9 @@ Framework3D::Framework3D()
 :	m_EventManager( NULL )
 ,	m_Display( NULL )
 ,	m_Window( NULL )
+#if !BUILD_SWITCH
 ,	m_SplashWindow( NULL )
+#endif
 ,	m_Keyboard( NULL )
 ,	m_Mouse( NULL )
 ,	m_Clock( NULL )
@@ -158,6 +160,11 @@ void Framework3D::Main()
 	}
 
 	SDL_DisableScreenSaver();
+#if BUILD_SWITCH
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+#endif
 #endif
 
 	STATICHASH( Framework );
@@ -310,7 +317,9 @@ void Framework3D::Main()
 
 	if( ShowWindowASAP() )
 	{
+#if !BUILD_SWITCH
 		SafeDelete( m_SplashWindow );
+#endif
 #if BUILD_WINDOWS_NO_SDL
 		m_Window->Show( m_CmdShow );
 #elif BUILD_SDL
@@ -340,6 +349,7 @@ void Framework3D::CreateSplashWindow( const uint WindowIcon, const char* const T
 
 	STATICHASH( Framework );
 	STATICHASH( SplashImage );
+#if !BUILD_SWITCH
 	const char* const	pSplashImage		= ConfigManager::GetString( sSplashImage, NULL, sFramework );
 	if( !pSplashImage )
 	{
@@ -385,6 +395,7 @@ void Framework3D::CreateSplashWindow( const uint WindowIcon, const char* const T
     {
     }
 #endif
+#endif
 }
 
 /*virtual*/ void Framework3D::ShutDown()
@@ -409,7 +420,9 @@ void Framework3D::CreateSplashWindow( const uint WindowIcon, const char* const T
 #endif
 
 	SafeDelete( m_Display );
+#if !BUILD_SWITCH
 	SafeDelete( m_SplashWindow );
+#endif
 	SafeDelete( m_Clock );
 	SafeDelete( m_Keyboard );
 	SafeDelete( m_Mouse );
@@ -429,7 +442,7 @@ void Framework3D::CreateSplashWindow( const uint WindowIcon, const char* const T
 	Profiler::DeleteInstance();
 #endif
 
-#if BUILD_SDL
+#if BUILD_SDL && !BUILD_SWITCH
 	SDL_Quit();
 #endif
 

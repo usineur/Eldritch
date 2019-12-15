@@ -599,7 +599,9 @@ ENotificationPosition GetSteamNoticePos( const HashedString& SteamNoticePosName 
 	}
 
 	// All done, show the window finally.
+#if !BUILD_SWITCH
 	SafeDelete( m_SplashWindow );
+#endif
 #if BUILD_WINDOWS_NO_SDL
 	m_Window->Show( m_CmdShow );
 #elif BUILD_SDL
@@ -1809,7 +1811,9 @@ void EldFramework::PrepareForLoad()
 {
 	PRINTF( "EldFramework::ToggleFullscreen\n" );
 
+#if !BUILD_SWITCH
 	Framework3D::ToggleFullscreen();
+#endif
 
 	// For fullscreen upscaling, we may need a new m_UpscaleView
 	UpdateViews();
