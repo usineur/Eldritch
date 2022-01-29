@@ -48,21 +48,20 @@ if(GLES)
   add_definitions(-DHAVE_GLES)
 endif(GLES)
 
-if(SWITCH_LIBNX)
-  set(CMAKE_CXX_FLAGS "-O3 -march=armv8-a -mtune=cortex-a57 -mtp=soft -fPIE -ffunction-sections -fdata-sections -ftls-model=local-exec")
-  include_directories($ENV{DEVKITPRO}/libnx/include $ENV{DEVKITPRO}/portlibs/switch/include)
+if(NINTENDO_SWITCH)
+  include_directories($ENV{DEVKITPRO}/portlibs/switch/include)
   add_definitions(-D__SWITCH__)
   add_custom_target(${CMAKE_PROJECT_NAME}.nro
     DEPENDS ${CMAKE_PROJECT_NAME}
     COMMAND nacptool --create "Eldritch" "usineur" "406" ${CMAKE_PROJECT_NAME}.nacp
-    COMMAND elf2nro Projects/Eld/${CMAKE_PROJECT_NAME} ${CMAKE_PROJECT_NAME}.nro
+    COMMAND elf2nro Projects/Eld/${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.nro
         --icon=${CMAKE_SOURCE_DIR}/icon.jpg --nacp=${CMAKE_PROJECT_NAME}.nacp
   )
   add_custom_target(nxlink
     DEPENDS ${CMAKE_PROJECT_NAME}.nro
     COMMAND nxlink -a $(SWITCHIP) ${CMAKE_PROJECT_NAME}.nro -s -p ${CMAKE_PROJECT_NAME}/${CMAKE_PROJECT_NAME}.nro
   )
-endif(SWITCH_LIBNX)
+endif(NINTENDO_SWITCH)
 
 add_subdirectory(Libraries/Core/)
 add_subdirectory(Libraries/Math/)
